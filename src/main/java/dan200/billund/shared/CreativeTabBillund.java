@@ -6,26 +6,29 @@
 
 package dan200.billund.shared;
 
-import net.minecraft.creativetab.CreativeTabs;
-import net.minecraft.item.ItemStack;
 import dan200.Billund;
+import net.minecraft.creativetab.CreativeTabs;
+import net.minecraft.item.Item;
+import net.minecraft.item.ItemStack;
 
-public class CreativeTabBillund extends CreativeTabs
-{
-    public CreativeTabBillund( int p1, String p2 )
-    {
-        super( p1, p2 );
+public class CreativeTabBillund extends CreativeTabs {
+
+    public CreativeTabBillund(int p1, String p2) {
+        super(p1, p2);
     }
-    
+
     @Override
-    public ItemStack getIconItemStack()
-    {
-        return ItemBrick.create( StudColour.Red, 2, 2, 1 ); 
+    public Item getTabIconItem() {
+        return Billund.BillundItems.brick;
     }
-    
+
     @Override
-    public String getTranslatedTabLabel()
-    {
-    	return getTabLabel();
+    public ItemStack getIconItemStack() {
+        return ItemBrick.create(StudColour.Red, 2, 2, 1);
+    }
+
+    @Override
+    public String getTranslatedTabLabel() {
+        return getTabLabel();
     }
 }

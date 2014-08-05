@@ -6,40 +6,16 @@
 
 package dan200.billund.server;
 
-import net.minecraft.entity.player.EntityPlayer;
-
-import dan200.Billund;
 import dan200.billund.shared.BillundProxyCommon;
 
-public class BillundProxyServer extends BillundProxyCommon
-{
-	public BillundProxyServer()
-	{
-	}
-	
-	// IBillundProxy implementation
-	
-	@Override
-	public void load()
-	{
-		super.load();
-		registerForgeHandlers();
-	}
-	
-	@Override
-	public boolean isClient()
-	{
-		return false;
-	}
+public class BillundProxyServer extends BillundProxyCommon {
 
-	@Override
-	public void openOrderFormGUI( EntityPlayer player )
-	{
-	}
-	
-	// private stuff
-	
-	private void registerForgeHandlers()
-	{
-	}
+    @Override
+    public void init() {
+        super.init();
+        registerForgeHandlers();
+    }
+
+    private void registerForgeHandlers() {
+    }
 }
