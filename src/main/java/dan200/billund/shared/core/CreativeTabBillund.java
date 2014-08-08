@@ -8,7 +8,6 @@ package dan200.billund.shared.core;
 
 import dan200.Billund;
 import dan200.billund.shared.item.ItemBrick;
-import dan200.billund.shared.data.StudColour;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
@@ -26,7 +25,7 @@ public class CreativeTabBillund extends CreativeTabs {
 
     @Override
     public ItemStack getIconItemStack() {
-        return ItemBrick.create(StudColour.Red, 2, 2, 1);
+        return ItemBrick.create(11743532, 2, 2, 1);
     }
 
     @Override

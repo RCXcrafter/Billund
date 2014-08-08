@@ -7,16 +7,16 @@
 package dan200.billund.shared.item;
 
 import dan200.Billund;
-import dan200.billund.client.helper.BrickRenderHelper;
-import dan200.billund.shared.tile.TileEntityBillund;
+import dan200.billund.client.handler.ClientTickHandler;
 import dan200.billund.shared.data.Brick;
 import dan200.billund.shared.data.Stud;
 import dan200.billund.shared.data.StudColour;
+import dan200.billund.shared.tile.TileEntityBillund;
 import net.minecraft.creativetab.CreativeTabs;
-import net.minecraft.entity.passive.EntitySheep;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.entity.player.EntityPlayerMP;
 import net.minecraft.item.Item;
+import net.minecraft.item.ItemDye;
 import net.minecraft.item.ItemStack;
 import net.minecraft.nbt.NBTTagCompound;
 import net.minecraft.util.MathHelper;
@@ -47,13 +47,8 @@ public class ItemBrick extends Item {
 
     @Override
     public void getSubItems(Item item, CreativeTabs tabs, List list) {
-        for (int i = 0; i < EntitySheep.fleeceColorTable.length; i++) {
-            int colour = BrickRenderHelper.getColor(
-                (int)(EntitySheep.fleeceColorTable[i][0] * 255),
-                (int)(EntitySheep.fleeceColorTable[i][1] * 255),
-                (int)(EntitySheep.fleeceColorTable[i][2] * 255)
-            );
-
+        for (int i = 0; i < ItemDye.field_150922_c.length; i++) {
+            int colour = ItemDye.field_150922_c[i];
             list.add(create(colour, 1, 1, 1));
             list.add(create(colour, 1, 2, 1));
             list.add(create(colour, 1, 3, 1));
@@ -101,15 +96,29 @@ public class ItemBrick extends Item {
             int width = getWidth(stack);
             int depth = getDepth(stack);
             int height = 1;
-            if (player.isSneaking()) {
+
+            if (ClientTickHandler.rotate) {
                 int temp = depth;
                 depth = width;
                 width = temp;
             }
 
-            int placeX = result.hitX;
+            if (ClientTickHandler.offsetX <= -width) {
+                ClientTickHandler.offsetX = -width;
+            } else if (ClientTickHandler.offsetX > width) {
+                ClientTickHandler.offsetX = width;
+            }
+
+            if (ClientTickHandler.offsetZ <= -depth) {
+                ClientTickHandler.offsetZ = -depth;
+            } else if (ClientTickHandler.offsetZ > depth) {
+                ClientTickHandler.offsetZ = depth;
+            }
+
+            int placeX = result.hitX + ClientTickHandler.offsetX;
             int placeY = result.hitY;
-            int placeZ = result.hitZ;
+            int placeZ = result.hitZ + ClientTickHandler.offsetZ;
+
             switch (result.hitSide) {
                 case 0:
                     placeY -= height;

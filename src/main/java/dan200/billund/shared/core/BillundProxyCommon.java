@@ -6,11 +6,13 @@
 
 package dan200.billund.shared.core;
 
+import cpw.mods.fml.client.registry.ClientRegistry;
 import cpw.mods.fml.common.FMLCommonHandler;
 import cpw.mods.fml.common.network.NetworkRegistry;
 import cpw.mods.fml.common.registry.EntityRegistry;
 import cpw.mods.fml.common.registry.GameRegistry;
 import dan200.Billund;
+import dan200.billund.client.handler.ClientTickHandler;
 import dan200.billund.shared.block.BlockBillund;
 import dan200.billund.shared.entity.EntityAirDrop;
 import dan200.billund.shared.handler.EntityEventHandler;
@@ -41,8 +43,11 @@ public class BillundProxyCommon {
         Billund.BillundItems.orderForm = new ItemOrderForm();
         GameRegistry.registerItem(Billund.BillundItems.orderForm, "OrderForm");
 
+        ClientRegistry.registerKeyBinding(ClientTickHandler.KEY_ROTATE);
+
         MinecraftForge.EVENT_BUS.register(new EntityEventHandler());
         FMLCommonHandler.instance().bus().register(new EntityEventHandler());
+        FMLCommonHandler.instance().bus().register(new ClientTickHandler());
 
         NetworkRegistry.INSTANCE.registerGuiHandler(Billund.instance, new GuiHandler());
         PacketHandler.initialize();

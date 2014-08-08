@@ -22,7 +22,7 @@ import java.util.Random;
 public class EntityEventHandler {
 
     @SubscribeEvent
-    public void onRenderTick(TickEvent.PlayerTickEvent event) {
+    public void onPlayerTick(TickEvent.PlayerTickEvent event) {
         if (event.phase == TickEvent.Phase.START) {
             // See what brick is in front of the player
             EntityPlayer player = Minecraft.getMinecraft().thePlayer;

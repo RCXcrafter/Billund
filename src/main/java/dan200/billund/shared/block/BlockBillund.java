@@ -18,6 +18,7 @@ import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.entity.item.EntityItem;
 import net.minecraft.entity.player.EntityPlayer;
+import net.minecraft.item.ItemDye;
 import net.minecraft.item.ItemStack;
 import net.minecraft.tileentity.TileEntity;
 import net.minecraft.util.AxisAlignedBB;
@@ -258,6 +259,16 @@ public class BlockBillund extends BlockContainer {
 
     @Override
     public boolean onBlockActivated(World world, int i, int j, int k, EntityPlayer entityplayer, int l, float m, float n, float o) {
+        if (!world.isRemote) {
+            if (s_hoverBrick != null) {
+                ItemStack held = entityplayer.getHeldItem();
+
+                if (held != null && held.getItem() instanceof ItemDye) {
+                    Brick newBrick = new Brick(ItemDye.field_150922_c[held.getItemDamage()], s_hoverBrick.XOrigin, s_hoverBrick.YOrigin, s_hoverBrick.ZOrigin, s_hoverBrick.Width, s_hoverBrick.Height, s_hoverBrick.Depth);
+                    TileEntityBillund.addBrick(world, newBrick);
+                }
+            }
+        }
         return false;
     }
 

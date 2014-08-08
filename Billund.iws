@@ -67,16 +67,7 @@
       <file leaf-file-name="BlockBillund.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/dan200/billund/shared/block/BlockBillund.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="52" column="0" selection-start="1578" selection-end="1578" vertical-scroll-proportion="0.0" vertical-offset="51" max-vertical-offset="4284">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="BrickBlockRenderer.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/dan200/billund/client/render/BrickBlockRenderer.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="37" column="86" selection-start="1972" selection-end="1972" vertical-scroll-proportion="0.0" vertical-offset="330" max-vertical-offset="1088">
+            <state line="38" column="34" selection-start="1321" selection-end="1321" vertical-scroll-proportion="0.0" vertical-offset="204" max-vertical-offset="4828">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -84,19 +75,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BillundProxyClient.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/dan200/billund/client/core/BillundProxyClient.java">
+      <file leaf-file-name="ItemDye.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="jar://$USER_HOME$/.gradle/caches/minecraft/net/minecraftforge/forge/1.7.10-10.13.0.1180/forgeSrc-1.7.10-10.13.0.1180-sources.jar!/net/minecraft/item/ItemDye.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="28" column="102" selection-start="1148" selection-end="1148" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="408">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="BrickRenderHelper.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/dan200/billund/client/helper/BrickRenderHelper.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="83" column="56" selection-start="3625" selection-end="3625" vertical-scroll-proportion="0.7382671" vertical-offset="832" max-vertical-offset="4114">
+            <state line="29" column="75" selection-start="1506" selection-end="1514" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="4335">
               <folding />
             </state>
           </provider>
@@ -105,25 +87,72 @@
       <file leaf-file-name="RenderEventHandler.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/dan200/billund/client/handler/RenderEventHandler.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="39" column="46" selection-start="1771" selection-end="1771" vertical-scroll-proportion="0.0" vertical-offset="357" max-vertical-offset="782">
+            <state line="39" column="46" selection-start="1771" selection-end="1771" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="782">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ItemBrick.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="CreativeTabBillund.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/dan200/billund/shared/core/CreativeTabBillund.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="32" column="24" selection-start="853" selection-end="853" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="527">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ItemBrick.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/dan200/billund/shared/item/ItemBrick.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="142" column="41" selection-start="5779" selection-end="5779" vertical-scroll-proportion="0.0" vertical-offset="1862" max-vertical-offset="3451">
+            <state line="109" column="13" selection-start="4545" selection-end="4545" vertical-scroll-proportion="2.0812275" vertical-offset="343" max-vertical-offset="3604">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TileEntityBillund.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/dan200/billund/shared/tile/TileEntityBillund.java">
+      <file leaf-file-name="BlockPistonBase.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="jar://$USER_HOME$/.gradle/caches/minecraft/net/minecraftforge/forge/1.7.10-10.13.0.1180/forgeSrc-1.7.10-10.13.0.1180-sources.jar!/net/minecraft/block/BlockPistonBase.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="113" column="26" selection-start="5344" selection-end="5344" vertical-scroll-proportion="0.0" vertical-offset="1542" max-vertical-offset="6596">
+            <state line="377" column="16" selection-start="16489" selection-end="16570" vertical-scroll-proportion="0.0" vertical-offset="5851" max-vertical-offset="9435">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="EntityEventHandler.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/dan200/billund/shared/handler/EntityEventHandler.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="33" column="15" selection-start="1229" selection-end="1229" vertical-scroll-proportion="0.0" vertical-offset="83" max-vertical-offset="782">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ClientTickHandler.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/dan200/billund/client/handler/ClientTickHandler.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="78" column="41" selection-start="2833" selection-end="2833" vertical-scroll-proportion="0.0" vertical-offset="1069" max-vertical-offset="1547">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GuiIngameForge.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="jar://$USER_HOME$/.gradle/caches/minecraft/net/minecraftforge/forge/1.7.10-10.13.0.1180/forgeSrc-1.7.10-10.13.0.1180-sources.jar!/net/minecraftforge/client/GuiIngameForge.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="186" column="19" selection-start="6821" selection-end="6821" vertical-scroll-proportion="-0.23076923" vertical-offset="2340" max-vertical-offset="14756">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="KeyBinding.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="jar://$USER_HOME$/.gradle/caches/minecraft/net/minecraftforge/forge/1.7.10-10.13.0.1180/forgeSrc-1.7.10-10.13.0.1180-sources.jar!/net/minecraft/client/settings/KeyBinding.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="81" column="11" selection-start="2179" selection-end="2179" vertical-scroll-proportion="0.0" vertical-offset="1006" max-vertical-offset="2278">
               <folding />
             </state>
           </provider>
@@ -172,15 +201,20 @@
         <option value="$PROJECT_DIR$/src/main/java/dan200/billund/shared/helper/EmeraldHelper.java" />
         <option value="$PROJECT_DIR$/src/main/java/dan200/billund/client/gui/GuiOrderForm.java" />
         <option value="$PROJECT_DIR$/src/main/java/dan200/billund/shared/network/message/MessageOrder.java" />
-        <option value="$PROJECT_DIR$/src/main/java/dan200/billund/shared/handler/EntityEventHandler.java" />
-        <option value="$PROJECT_DIR$/src/main/java/dan200/billund/shared/core/BillundProxyCommon.java" />
-        <option value="$PROJECT_DIR$/src/main/java/dan200/billund/shared/item/ItemBrick.java" />
         <option value="$USER_HOME$/.gradle/caches/minecraft/net/minecraftforge/forge/1.7.10-10.13.0.1180/forgeSrc-1.7.10-10.13.0.1180-sources.jar!/net/minecraft/client/renderer/RenderBlocks.java" />
         <option value="$PROJECT_DIR$/src/main/java/dan200/billund/client/core/BillundProxyClient.java" />
-        <option value="$PROJECT_DIR$/src/main/java/dan200/billund/shared/block/BlockBillund.java" />
-        <option value="$PROJECT_DIR$/src/main/java/dan200/billund/client/render/BrickBlockRenderer.java" />
         <option value="$PROJECT_DIR$/src/main/java/dan200/billund/client/handler/RenderEventHandler.java" />
+        <option value="$PROJECT_DIR$/src/main/java/dan200/billund/shared/block/BlockBillund.java" />
+        <option value="$PROJECT_DIR$/src/main/java/dan200/billund/shared/tile/TileEntityBillund.java" />
+        <option value="$PROJECT_DIR$/src/main/java/dan200/billund/client/render/BrickBlockRenderer.java" />
         <option value="$PROJECT_DIR$/src/main/java/dan200/billund/client/helper/BrickRenderHelper.java" />
+        <option value="$USER_HOME$/.gradle/caches/minecraft/net/minecraftforge/forge/1.7.10-10.13.0.1180/forgeSrc-1.7.10-10.13.0.1180-sources.jar!/net/minecraft/item/ItemDye.java" />
+        <option value="$PROJECT_DIR$/src/main/java/dan200/billund/shared/core/CreativeTabBillund.java" />
+        <option value="$PROJECT_DIR$/src/main/java/dan200/billund/shared/handler/EntityEventHandler.java" />
+        <option value="$PROJECT_DIR$/src/main/java/dan200/billund/shared/core/BillundProxyCommon.java" />
+        <option value="$USER_HOME$/.gradle/caches/minecraft/net/minecraftforge/forge/1.7.10-10.13.0.1180/forgeSrc-1.7.10-10.13.0.1180-sources.jar!/net/minecraft/block/BlockPistonBase.java" />
+        <option value="$PROJECT_DIR$/src/main/java/dan200/billund/client/handler/ClientTickHandler.java" />
+        <option value="$PROJECT_DIR$/src/main/java/dan200/billund/shared/item/ItemBrick.java" />
       </list>
     </option>
   </component>
@@ -775,14 +809,14 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26096824" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2655068" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -803,40 +837,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$USER_HOME$/.gradle/caches/minecraft/net/minecraftforge/forge/1.7.10-10.13.0.1180/forgeSrc-1.7.10-10.13.0.1180-sources.jar!/net/minecraftforge/client/event/RenderWorldEvent.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="16" selection-start="921" selection-end="921" vertical-scroll-proportion="0.0" vertical-offset="476" max-vertical-offset="748" />
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/minecraft/net/minecraftforge/forge/1.7.10-10.13.0.1180/forgeSrc-1.7.10-10.13.0.1180-sources.jar!/net/minecraftforge/client/ForgeHooksClient.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="479" column="29" selection-start="18480" selection-end="18480" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="8534" />
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/minecraft/net/minecraftforge/forge/1.7.10-10.13.0.1180/forgeSrc-1.7.10-10.13.0.1180-sources.jar!/net/minecraft/client/renderer/WorldRenderer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="264" column="51" selection-start="10629" selection-end="10629" vertical-scroll-proportion="0.0" vertical-offset="4488" max-vertical-offset="5916" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/dan200/billund/shared/item/ItemBrick.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="172" column="37" selection-start="6706" selection-end="6706" vertical-scroll-proportion="0.0" vertical-offset="2924" max-vertical-offset="3536">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/dan200/billund/shared/tile/TileEntityBillund.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="47" column="68" selection-start="2122" selection-end="2122" vertical-scroll-proportion="0.0" vertical-offset="799" max-vertical-offset="6817" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/dan200/billund/shared/core/BillundProxyCommon.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="35" column="17" selection-start="1030" selection-end="1030" vertical-scroll-proportion="0.0" vertical-offset="787" max-vertical-offset="1649">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/dan200/billund/client/render/ModelParachute.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="78" column="0" selection-start="2620" selection-end="2620" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1428">
@@ -854,16 +854,6 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/dan200/billund/shared/core/BuildInfo.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="8" column="13" selection-start="243" selection-end="243" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="272" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/dan200/billund/shared/core/CreativeTabBillund.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="42" selection-start="598" selection-end="598" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="561">
-          <folding>
-            <element signature="e#650#651#0" expanded="false" />
-            <element signature="e#699#700#0" expanded="false" />
-          </folding>
-        </state>
       </provider>
     </entry>
     <entry file="jar://$USER_HOME$/.gradle/caches/minecraft/net/minecraftforge/forge/1.7.10-10.13.0.1180/forgeSrc-1.7.10-10.13.0.1180-sources.jar!/cpw/mods/fml/common/gameevent/TickEvent.java">
@@ -944,20 +934,6 @@
         <state line="155" column="61" selection-start="5023" selection-end="5023" vertical-scroll-proportion="0.87009066" vertical-offset="2160" max-vertical-offset="3196" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/dan200/billund/shared/core/BillundProxyCommon.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="44" column="75" selection-start="1859" selection-end="1859" vertical-scroll-proportion="0.0" vertical-offset="319" max-vertical-offset="680">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/dan200/billund/shared/data/Brick.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="13" selection-start="248" selection-end="248" vertical-scroll-proportion="0.0" vertical-offset="187" max-vertical-offset="510">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/dan200/billund/shared/data/StudColour.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="8" column="13" selection-start="248" selection-end="248" vertical-scroll-proportion="0.119929455" vertical-offset="0" max-vertical-offset="578">
@@ -967,71 +943,32 @@
     </entry>
     <entry file="jar://$USER_HOME$/.gradle/caches/minecraft/net/minecraftforge/forge/1.7.10-10.13.0.1180/forgeSrc-1.7.10-10.13.0.1180-sources.jar!/net/minecraft/client/renderer/entity/RenderItem.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="176" column="49" selection-start="6869" selection-end="6869" vertical-scroll-proportion="-2.8461537" vertical-offset="2425" max-vertical-offset="13787">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/dan200/billund/client/render/BrickItemRenderer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="46" column="43" selection-start="1377" selection-end="1377" vertical-scroll-proportion="0.0" vertical-offset="466" max-vertical-offset="1224">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/dan200/billund/shared/handler/EntityEventHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="19" selection-start="730" selection-end="730" vertical-scroll-proportion="0.0" vertical-offset="277" max-vertical-offset="1020">
-          <folding />
-        </state>
+        <state line="176" column="49" selection-start="6869" selection-end="6869" vertical-scroll-proportion="-2.8461537" vertical-offset="2425" max-vertical-offset="13787" />
       </provider>
     </entry>
     <entry file="jar://$USER_HOME$/.gradle/caches/minecraft/net/minecraftforge/forge/1.7.10-10.13.0.1180/forgeSrc-1.7.10-10.13.0.1180-sources.jar!/net/minecraft/item/ItemArmor.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="202" column="16" selection-start="7504" selection-end="7504" vertical-scroll-proportion="0.0" vertical-offset="3199" max-vertical-offset="5729">
-          <folding />
-        </state>
+        <state line="202" column="16" selection-start="7504" selection-end="7504" vertical-scroll-proportion="0.0" vertical-offset="3199" max-vertical-offset="5729" />
       </provider>
     </entry>
     <entry file="jar://$USER_HOME$/.gradle/caches/minecraft/net/minecraftforge/forge/1.7.10-10.13.0.1180/forgeSrc-1.7.10-10.13.0.1180-sources.jar!/net/minecraft/item/crafting/RecipesArmorDyes.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="113" column="21" selection-start="3810" selection-end="3811" vertical-scroll-proportion="0.0" vertical-offset="2051" max-vertical-offset="2618">
-          <folding />
-        </state>
+        <state line="113" column="21" selection-start="3810" selection-end="3811" vertical-scroll-proportion="0.0" vertical-offset="2051" max-vertical-offset="2618" />
       </provider>
     </entry>
     <entry file="jar://$USER_HOME$/.gradle/caches/minecraft/net/minecraftforge/forge/1.7.10-10.13.0.1180/forgeSrc-1.7.10-10.13.0.1180-sources.jar!/net/minecraft/client/renderer/entity/RenderSheep.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="38" column="47" selection-start="1559" selection-end="1559" vertical-scroll-proportion="0.0" vertical-offset="614" max-vertical-offset="1326">
-          <folding />
-        </state>
+        <state line="38" column="47" selection-start="1559" selection-end="1559" vertical-scroll-proportion="0.0" vertical-offset="614" max-vertical-offset="1326" />
       </provider>
     </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.7.0_40/src.zip!/java/awt/Color.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="396" column="0" selection-start="11365" selection-end="11365" vertical-scroll-proportion="0.0" vertical-offset="5965" max-vertical-offset="20757">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/dan200/billund/shared/data/Stud.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="13" selection-start="248" selection-end="248" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="629">
-          <folding />
-        </state>
+        <state line="396" column="0" selection-start="11365" selection-end="11365" vertical-scroll-proportion="0.0" vertical-offset="5965" max-vertical-offset="20757" />
       </provider>
     </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.7.0_40/src.zip!/javax/swing/ClientPropertyKey.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="59" column="5" selection-start="1839" selection-end="1839" vertical-scroll-proportion="0.0" vertical-offset="423" max-vertical-offset="1717">
-          <folding>
-            <element signature="e#0#3671#0" expanded="false" />
-            <element signature="e#2691#2889#0" expanded="false" />
-            <element signature="e#2874#2875#0" expanded="false" />
-            <element signature="e#3618#3619#0" expanded="false" />
-            <element signature="e#3667#3668#0" expanded="false" />
-          </folding>
-        </state>
+        <state line="59" column="5" selection-start="1839" selection-end="1839" vertical-scroll-proportion="0.0" vertical-offset="423" max-vertical-offset="1717" />
       </provider>
     </entry>
     <entry file="jar://$USER_HOME$/.gradle/caches/minecraft/net/minecraftforge/forge/1.7.10-10.13.0.1180/forgeSrc-1.7.10-10.13.0.1180-sources.jar!/net/minecraft/client/renderer/Tessellator.java">
@@ -1043,16 +980,12 @@
     </entry>
     <entry file="jar://$USER_HOME$/.gradle/caches/minecraft/net/minecraftforge/forge/1.7.10-10.13.0.1180/forgeSrc-1.7.10-10.13.0.1180-sources.jar!/net/minecraft/entity/passive/EntitySheep.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="47" column="34" selection-start="1878" selection-end="1878" vertical-scroll-proportion="0.0" vertical-offset="105" max-vertical-offset="5406">
-          <folding />
-        </state>
+        <state line="47" column="34" selection-start="1878" selection-end="1878" vertical-scroll-proportion="0.0" vertical-offset="105" max-vertical-offset="5406" />
       </provider>
     </entry>
     <entry file="jar://$USER_HOME$/.gradle/caches/minecraft/net/minecraftforge/forge/1.7.10-10.13.0.1180/forgeSrc-1.7.10-10.13.0.1180-sources.jar!/net/minecraft/client/renderer/tileentity/TileEntityRendererPiston.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="63" selection-start="1275" selection-end="1326" vertical-scroll-proportion="0.4904348" vertical-offset="7" max-vertical-offset="1258">
-          <folding />
-        </state>
+        <state line="31" column="63" selection-start="1275" selection-end="1326" vertical-scroll-proportion="0.4904348" vertical-offset="7" max-vertical-offset="1258" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/dan200/Billund.java">
@@ -1066,66 +999,147 @@
     </entry>
     <entry file="jar://$USER_HOME$/.gradle/caches/minecraft/net/minecraftforge/forge/1.7.10-10.13.0.1180/forgeSrc-1.7.10-10.13.0.1180-sources.jar!/cpw/mods/fml/client/registry/RenderingRegistry.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="113" column="25" selection-start="3372" selection-end="3372" vertical-scroll-proportion="0.0" vertical-offset="1477" max-vertical-offset="2108">
-          <folding />
-        </state>
+        <state line="113" column="25" selection-start="3372" selection-end="3372" vertical-scroll-proportion="0.0" vertical-offset="1477" max-vertical-offset="2108" />
       </provider>
     </entry>
     <entry file="jar://$USER_HOME$/.gradle/caches/minecraft/net/minecraftforge/forge/1.7.10-10.13.0.1180/forgeSrc-1.7.10-10.13.0.1180-sources.jar!/net/minecraft/src/FMLRenderAccessLibrary.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="50" column="38" selection-start="1379" selection-end="1379" vertical-scroll-proportion="0.0" vertical-offset="449" max-vertical-offset="1003">
-          <folding />
-        </state>
+        <state line="50" column="38" selection-start="1379" selection-end="1379" vertical-scroll-proportion="0.0" vertical-offset="449" max-vertical-offset="1003" />
       </provider>
     </entry>
     <entry file="jar://$USER_HOME$/.gradle/caches/minecraft/net/minecraftforge/forge/1.7.10-10.13.0.1180/forgeSrc-1.7.10-10.13.0.1180-sources.jar!/net/minecraft/client/renderer/RenderBlocks.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="370" column="13" selection-start="14296" selection-end="14296" vertical-scroll-proportion="0.0" vertical-offset="5136" max-vertical-offset="144109">
-          <folding />
-        </state>
+        <state line="370" column="13" selection-start="14296" selection-end="14296" vertical-scroll-proportion="0.0" vertical-offset="5136" max-vertical-offset="144109" />
       </provider>
     </entry>
     <entry file="jar://$USER_HOME$/.gradle/caches/minecraft/net/minecraftforge/forge/1.7.10-10.13.0.1180/forgeSrc-1.7.10-10.13.0.1180-sources.jar!/net/minecraft/client/renderer/WorldRenderer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="221" column="0" selection-start="9228" selection-end="9228" vertical-scroll-proportion="0.4695652" vertical-offset="3147" max-vertical-offset="5916">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/dan200/billund/shared/block/BlockBillund.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="52" column="0" selection-start="1578" selection-end="1578" vertical-scroll-proportion="0.0" vertical-offset="51" max-vertical-offset="4284">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/dan200/billund/shared/item/ItemBrick.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="142" column="41" selection-start="5779" selection-end="5779" vertical-scroll-proportion="0.0" vertical-offset="1862" max-vertical-offset="3451">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/dan200/billund/shared/tile/TileEntityBillund.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="113" column="26" selection-start="5344" selection-end="5344" vertical-scroll-proportion="0.0" vertical-offset="1542" max-vertical-offset="6596">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/dan200/billund/client/render/BrickBlockRenderer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="37" column="86" selection-start="1972" selection-end="1972" vertical-scroll-proportion="0.0" vertical-offset="330" max-vertical-offset="1088">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
+        <state line="221" column="0" selection-start="9228" selection-end="9228" vertical-scroll-proportion="0.4695652" vertical-offset="3147" max-vertical-offset="5916" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/dan200/billund/client/core/BillundProxyClient.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="28" column="102" selection-start="1148" selection-end="1148" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="408">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/dan200/billund/shared/data/Stud.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="13" selection-start="248" selection-end="248" vertical-scroll-proportion="0.119929455" vertical-offset="0" max-vertical-offset="629">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/dan200/billund/shared/data/Brick.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="11" selection-start="431" selection-end="431" vertical-scroll-proportion="0.0" vertical-offset="117" max-vertical-offset="510">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/dan200/billund/shared/tile/TileEntityBillund.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="358" column="36" selection-start="13522" selection-end="13522" vertical-scroll-proportion="0.0" vertical-offset="5417" max-vertical-offset="6681">
+          <folding>
+            <element signature="e#13484#13485#0" expanded="true" />
+            <element signature="e#13527#13528#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/dan200/billund/client/render/BrickBlockRenderer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="41" column="25" selection-start="2166" selection-end="2166" vertical-scroll-proportion="0.0" vertical-offset="373" max-vertical-offset="969">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/dan200/billund/client/render/BrickItemRenderer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="46" column="43" selection-start="1377" selection-end="1377" vertical-scroll-proportion="0.0" vertical-offset="466" max-vertical-offset="1224">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/dan200/billund/client/helper/BrickRenderHelper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="62" column="50" selection-start="2401" selection-end="2401" vertical-scroll-proportion="0.0" vertical-offset="292" max-vertical-offset="4114">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/minecraft/net/minecraftforge/forge/1.7.10-10.13.0.1180/forgeSrc-1.7.10-10.13.0.1180-sources.jar!/net/minecraft/item/ItemDye.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="29" column="75" selection-start="1506" selection-end="1514" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="4335">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/minecraft/net/minecraftforge/forge/1.7.10-10.13.0.1180/forgeSrc-1.7.10-10.13.0.1180-sources.jar!/net/minecraft/creativetab/CreativeTabs.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="176" column="18" selection-start="6052" selection-end="6052" vertical-scroll-proportion="0.33212996" vertical-offset="2128" max-vertical-offset="5984">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/dan200/billund/shared/core/CreativeTabBillund.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="32" column="24" selection-start="853" selection-end="853" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="527">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/dan200/billund/shared/block/BlockBillund.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="38" column="34" selection-start="1321" selection-end="1321" vertical-scroll-proportion="0.0" vertical-offset="204" max-vertical-offset="4828">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/minecraft/net/minecraftforge/forge/1.7.10-10.13.0.1180/forgeSrc-1.7.10-10.13.0.1180-sources.jar!/net/minecraft/client/settings/KeyBinding.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="81" column="11" selection-start="2179" selection-end="2179" vertical-scroll-proportion="0.0" vertical-offset="1006" max-vertical-offset="2278">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/dan200/billund/shared/core/BillundProxyCommon.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="45" column="70" selection-start="1893" selection-end="1893" vertical-scroll-proportion="0.0" vertical-offset="113" max-vertical-offset="731">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/dan200/billund/shared/handler/EntityEventHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="33" column="15" selection-start="1229" selection-end="1229" vertical-scroll-proportion="0.0" vertical-offset="83" max-vertical-offset="782">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/minecraft/net/minecraftforge/forge/1.7.10-10.13.0.1180/forgeSrc-1.7.10-10.13.0.1180-sources.jar!/net/minecraftforge/client/GuiIngameForge.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="186" column="19" selection-start="6821" selection-end="6821" vertical-scroll-proportion="-0.23076923" vertical-offset="2340" max-vertical-offset="14756">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/minecraft/net/minecraftforge/forge/1.7.10-10.13.0.1180/forgeSrc-1.7.10-10.13.0.1180-sources.jar!/net/minecraft/block/BlockPistonBase.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="377" column="16" selection-start="16489" selection-end="16570" vertical-scroll-proportion="0.0" vertical-offset="5596" max-vertical-offset="9435">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/dan200/billund/client/handler/ClientTickHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="78" column="41" selection-start="2833" selection-end="2833" vertical-scroll-proportion="0.0" vertical-offset="1069" max-vertical-offset="1547">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1136,9 +1150,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/dan200/billund/client/helper/BrickRenderHelper.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/dan200/billund/shared/item/ItemBrick.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="83" column="56" selection-start="3625" selection-end="3625" vertical-scroll-proportion="0.7382671" vertical-offset="832" max-vertical-offset="4114">
+        <state line="109" column="13" selection-start="4545" selection-end="4545" vertical-scroll-proportion="2.0812275" vertical-offset="343" max-vertical-offset="3604">
           <folding />
         </state>
       </provider>

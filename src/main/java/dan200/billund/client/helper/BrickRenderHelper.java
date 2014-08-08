@@ -60,7 +60,7 @@ public class BrickRenderHelper {
 
         tessellator.startDrawingQuads();
         tessellator.setNormal(0.0f, -1.0f, 0.0f);
-        renderBrick(null, brightness, colour, 0.5F, 0, 0, 0, width, height, depth);
+        renderBrick(null, brightness, colour, 1.0F, 0, 0, 0, width, height, depth);
         tessellator.draw();
 
         // Teardown
