@@ -6,7 +6,7 @@
 
 package dan200.billund.shared.tile;
 
-import dan200.Billund;
+import dan200.billund.Billund;
 import dan200.billund.shared.data.Brick;
 import dan200.billund.shared.data.Stud;
 import dan200.billund.shared.data.StudColour;

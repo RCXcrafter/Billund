@@ -6,7 +6,7 @@
 
 package dan200.billund.shared.item;
 
-import dan200.Billund;
+import dan200.billund.Billund;
 import dan200.billund.client.handler.ClientTickHandler;
 import dan200.billund.shared.data.Brick;
 import dan200.billund.shared.data.Stud;

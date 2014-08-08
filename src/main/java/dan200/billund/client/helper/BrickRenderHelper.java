@@ -1,6 +1,6 @@
 package dan200.billund.client.helper;
 
-import dan200.Billund;
+import dan200.billund.shared.block.BillundBlocks;
 import dan200.billund.shared.data.Brick;
 import dan200.billund.shared.data.Stud;
 import dan200.billund.shared.data.StudColour;
@@ -78,7 +78,7 @@ public class BrickRenderHelper {
         int blockZ = (brick.ZOrigin - localZ) / TileEntityBillund.ROWS_PER_BLOCK;
 
         Tessellator tessellator = Tessellator.instance;
-        int brightness = Billund.BillundBlocks.billund.getMixedBrightnessForBlock(world, blockX, blockY, blockZ);
+        int brightness = BillundBlocks.billund.getMixedBrightnessForBlock(world, blockX, blockY, blockZ);
 
         tessellator.startDrawingQuads();
         renderBrick(world, brightness, brick.Colour, 0.65F, brick.XOrigin, brick.YOrigin, brick.ZOrigin, brick.Width, brick.Height, brick.Depth);

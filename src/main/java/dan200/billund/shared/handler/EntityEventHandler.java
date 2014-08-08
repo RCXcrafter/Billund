@@ -2,7 +2,7 @@ package dan200.billund.shared.handler;
 
 import cpw.mods.fml.common.eventhandler.SubscribeEvent;
 import cpw.mods.fml.common.gameevent.TickEvent;
-import dan200.Billund;
+import dan200.billund.Billund;
 import dan200.billund.shared.block.BlockBillund;
 import dan200.billund.shared.data.Brick;
 import dan200.billund.shared.item.ItemBrick;

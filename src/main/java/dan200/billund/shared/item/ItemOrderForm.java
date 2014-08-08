@@ -6,7 +6,7 @@
 
 package dan200.billund.shared.item;
 
-import dan200.Billund;
+import dan200.billund.Billund;
 import dan200.billund.shared.handler.GuiHandler;
 import net.minecraft.client.renderer.texture.IIconRegister;
 import net.minecraft.creativetab.CreativeTabs;

@@ -11,7 +11,7 @@ import cpw.mods.fml.common.FMLCommonHandler;
 import cpw.mods.fml.common.network.NetworkRegistry;
 import cpw.mods.fml.common.registry.EntityRegistry;
 import cpw.mods.fml.common.registry.GameRegistry;
-import dan200.Billund;
+import dan200.billund.Billund;
 import dan200.billund.client.handler.ClientTickHandler;
 import dan200.billund.shared.block.BlockBillund;
 import dan200.billund.shared.entity.EntityAirDrop;

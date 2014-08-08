@@ -6,7 +6,7 @@
 
 package dan200.billund.shared.core;
 
-import dan200.Billund;
+import dan200.billund.Billund;
 import dan200.billund.shared.item.ItemBrick;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;

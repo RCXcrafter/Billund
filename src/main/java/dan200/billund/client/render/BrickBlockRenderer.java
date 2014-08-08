@@ -1,6 +1,6 @@
 package dan200.billund.client.render;
 
-import dan200.Billund;
+import dan200.billund.Billund;
 import dan200.billund.client.helper.BrickRenderHelper;
 import dan200.billund.shared.data.Stud;
 import dan200.billund.shared.tile.TileEntityBillund;
