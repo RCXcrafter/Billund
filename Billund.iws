@@ -64,10 +64,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="GuiOrderForm.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/dan200/billund/client/GuiOrderForm.java">
+      <file leaf-file-name="BlockBillund.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/dan200/billund/shared/block/BlockBillund.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="166" column="77" selection-start="5103" selection-end="5343" vertical-scroll-proportion="0.0" vertical-offset="2431" max-vertical-offset="3502">
+            <state line="52" column="0" selection-start="1578" selection-end="1578" vertical-scroll-proportion="0.0" vertical-offset="51" max-vertical-offset="4284">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BrickBlockRenderer.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/dan200/billund/client/render/BrickBlockRenderer.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="37" column="86" selection-start="1972" selection-end="1972" vertical-scroll-proportion="0.0" vertical-offset="330" max-vertical-offset="1088">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -75,56 +84,47 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Billund.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/dan200/Billund.java">
+      <file leaf-file-name="BillundProxyClient.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/dan200/billund/client/core/BillundProxyClient.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="26" column="26" selection-start="820" selection-end="820" vertical-scroll-proportion="0.0" vertical-offset="207" max-vertical-offset="2057">
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state line="28" column="102" selection-start="1148" selection-end="1148" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="408">
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BlockBillund.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/dan200/billund/shared/BlockBillund.java">
+      <file leaf-file-name="BrickRenderHelper.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/dan200/billund/client/helper/BrickRenderHelper.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="116" column="36" selection-start="4122" selection-end="4122" vertical-scroll-proportion="1.1575757" vertical-offset="1522" max-vertical-offset="5406">
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state line="83" column="56" selection-start="3625" selection-end="3625" vertical-scroll-proportion="0.7382671" vertical-offset="832" max-vertical-offset="4114">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RenderEventHandler.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/dan200/billund/client/handler/RenderEventHandler.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="39" column="46" selection-start="1771" selection-end="1771" vertical-scroll-proportion="0.0" vertical-offset="357" max-vertical-offset="782">
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="ItemBrick.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/dan200/billund/shared/ItemBrick.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/dan200/billund/shared/item/ItemBrick.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="172" column="37" selection-start="6706" selection-end="6706" vertical-scroll-proportion="0.0" vertical-offset="2525" max-vertical-offset="3298">
+            <state line="142" column="41" selection-start="5779" selection-end="5779" vertical-scroll-proportion="0.0" vertical-offset="1862" max-vertical-offset="3451">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="TileEntityBillund.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/dan200/billund/shared/TileEntityBillund.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/dan200/billund/shared/tile/TileEntityBillund.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="47" column="68" selection-start="2122" selection-end="2122" vertical-scroll-proportion="0.0" vertical-offset="1195" max-vertical-offset="6596">
+            <state line="113" column="26" selection-start="5344" selection-end="5344" vertical-scroll-proportion="0.0" vertical-offset="1542" max-vertical-offset="6596">
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="BillundProxyCommon.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/dan200/billund/shared/BillundProxyCommon.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="35" column="17" selection-start="1030" selection-end="1030" vertical-scroll-proportion="0.0" vertical-offset="787" max-vertical-offset="1649">
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
-                <element signature="imports" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -141,22 +141,46 @@
       <list>
         <option value="$PROJECT_DIR$/src/main/java/dan200/billund/shared/IBillundProxy.java" />
         <option value="$PROJECT_DIR$/src/main/java/dan200/billund/client/ModelParachute.java" />
-        <option value="$PROJECT_DIR$/src/main/java/dan200/billund/shared/EntityAirDrop.java" />
         <option value="$PROJECT_DIR$/src/main/java/dan200/billund/client/RenderAirDrop.java" />
         <option value="$PROJECT_DIR$/src/main/java/dan200/billund/server/BillundProxyServer.java" />
         <option value="$PROJECT_DIR$/src/main/java/dan200/billund/shared/BlockBillund.java" />
-        <option value="$PROJECT_DIR$/src/main/java/dan200/Billund.java" />
         <option value="$PROJECT_DIR$/src/main/java/dan200/billund/shared/BillundSet.java" />
         <option value="$PROJECT_DIR$/src/main/java/dan200/billund/shared/Brick.java" />
         <option value="$PROJECT_DIR$/src/main/java/dan200/billund/shared/CreativeTabBillund.java" />
         <option value="$PROJECT_DIR$/src/main/java/dan200/billund/shared/ItemBrick.java" />
-        <option value="$PROJECT_DIR$/src/main/java/dan200/billund/shared/ItemOrderForm.java" />
         <option value="$PROJECT_DIR$/src/main/java/dan200/billund/shared/Stud.java" />
         <option value="$PROJECT_DIR$/src/main/java/dan200/billund/shared/StudColour.java" />
         <option value="$PROJECT_DIR$/src/main/java/dan200/billund/client/BillundProxyClient.java" />
-        <option value="$PROJECT_DIR$/src/main/java/dan200/billund/client/GuiOrderForm.java" />
-        <option value="$PROJECT_DIR$/src/main/java/dan200/billund/shared/BillundProxyCommon.java" />
         <option value="$PROJECT_DIR$/src/main/java/dan200/billund/shared/TileEntityBillund.java" />
+        <option value="$USER_HOME$/.gradle/caches/minecraft/net/minecraftforge/forge/1.7.10-10.13.0.1180/forgeSrc-1.7.10-10.13.0.1180-sources.jar!/net/minecraftforge/client/event/RenderWorldEvent.java" />
+        <option value="$USER_HOME$/.gradle/caches/minecraft/net/minecraftforge/forge/1.7.10-10.13.0.1180/forgeSrc-1.7.10-10.13.0.1180-sources.jar!/net/minecraft/client/renderer/WorldRenderer.java" />
+        <option value="$PROJECT_DIR$/src/main/java/dan200/billund/shared/network/PacketHandler.java" />
+        <option value="$PROJECT_DIR$/src/main/java/dan200/billund/shared/handler/GuiHandler.java" />
+        <option value="$PROJECT_DIR$/src/main/java/dan200/billund/shared/ItemOrderForm.java" />
+        <option value="$PROJECT_DIR$/src/main/java/dan200/billund/shared/BillundProxyCommon.java" />
+        <option value="$PROJECT_DIR$/src/main/java/dan200/billund/client/GuiOrderForm.java" />
+        <option value="$PROJECT_DIR$/src/main/java/dan200/billund/shared/EntityAirDrop.java" />
+        <option value="$PROJECT_DIR$/src/main/java/dan200/billund/shared/data/BillundSet.java" />
+        <option value="$PROJECT_DIR$/run/crash-reports/crash-2014-08-05_23.00.05-client.txt" />
+        <option value="$PROJECT_DIR$/src/main/java/dan200/billund/client/render/ForgeHandlers.java" />
+        <option value="$PROJECT_DIR$/src/main/java/dan200/billund/client/render/RenderEventHandler.java" />
+        <option value="$PROJECT_DIR$/src/main/java/dan200/billund/client/render/BillundBlockRenderingHandler.java" />
+        <option value="$PROJECT_DIR$/src/main/java/dan200/billund/client/render/BrickRenderer.java" />
+        <option value="$PROJECT_DIR$/src/main/java/dan200/billund/client/helper/RenderHelper.java" />
+        <option value="$PROJECT_DIR$/src/main/java/dan200/billund/client/render/BrickItemRenderer.java" />
+        <option value="$PROJECT_DIR$/src/main/java/dan200/Billund.java" />
+        <option value="$PROJECT_DIR$/src/main/java/dan200/billund/shared/helper/EmeraldHelper.java" />
+        <option value="$PROJECT_DIR$/src/main/java/dan200/billund/client/gui/GuiOrderForm.java" />
+        <option value="$PROJECT_DIR$/src/main/java/dan200/billund/shared/network/message/MessageOrder.java" />
+        <option value="$PROJECT_DIR$/src/main/java/dan200/billund/shared/handler/EntityEventHandler.java" />
+        <option value="$PROJECT_DIR$/src/main/java/dan200/billund/shared/core/BillundProxyCommon.java" />
+        <option value="$PROJECT_DIR$/src/main/java/dan200/billund/shared/item/ItemBrick.java" />
+        <option value="$USER_HOME$/.gradle/caches/minecraft/net/minecraftforge/forge/1.7.10-10.13.0.1180/forgeSrc-1.7.10-10.13.0.1180-sources.jar!/net/minecraft/client/renderer/RenderBlocks.java" />
+        <option value="$PROJECT_DIR$/src/main/java/dan200/billund/client/core/BillundProxyClient.java" />
+        <option value="$PROJECT_DIR$/src/main/java/dan200/billund/shared/block/BlockBillund.java" />
+        <option value="$PROJECT_DIR$/src/main/java/dan200/billund/client/render/BrickBlockRenderer.java" />
+        <option value="$PROJECT_DIR$/src/main/java/dan200/billund/client/handler/RenderEventHandler.java" />
+        <option value="$PROJECT_DIR$/src/main/java/dan200/billund/client/helper/BrickRenderHelper.java" />
       </list>
     </option>
   </component>
@@ -201,8 +225,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -329,7 +351,239 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="server" />
+              <option name="myItemId" value="shared" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="item" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Billund" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Billund" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dan200" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="billund" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="shared" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="handler" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Billund" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Billund" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dan200" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="billund" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="shared" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="core" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Billund" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Billund" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dan200" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="billund" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="shared" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="block" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Billund" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Billund" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dan200" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="billund" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="client" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="render" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Billund" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Billund" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dan200" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="billund" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="client" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="helper" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Billund" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Billund" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dan200" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="billund" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="client" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="handler" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -369,6 +623,8 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -386,6 +642,17 @@
     <property name="OverrideImplement.combined" value="true" />
     <property name="OverrideImplement.overriding.sorted" value="false" />
     <property name="dynamic.classpath" value="false" />
+    <property name="last_directory_selection" value="$PROJECT_DIR$/src/main/java/dan200/billund/client" />
+    <property name="FullScreen" value="false" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="dan200.billund.client.handler" />
+      <recent name="dan200.billund.client.render" />
+      <recent name="dan200.billund.client.gui" />
+      <recent name="dan200.billund.shared.tile" />
+      <recent name="dan200.billund.shared.entity" />
+    </key>
   </component>
   <component name="RunManager" selected="Application.Minecraft Client">
     <configuration default="true" type="Remote" factoryName="Remote">
@@ -496,19 +763,19 @@
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32899022" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3990228" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="ASM" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32899022" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39739415" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="ASM" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32899022" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24962178" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26096824" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -536,162 +803,343 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/dan200/billund/client/ModelParachute.java">
+    <entry file="jar://$USER_HOME$/.gradle/caches/minecraft/net/minecraftforge/forge/1.7.10-10.13.0.1180/forgeSrc-1.7.10-10.13.0.1180-sources.jar!/net/minecraftforge/client/event/RenderWorldEvent.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="28" column="16" selection-start="921" selection-end="921" vertical-scroll-proportion="0.0" vertical-offset="476" max-vertical-offset="748" />
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/minecraft/net/minecraftforge/forge/1.7.10-10.13.0.1180/forgeSrc-1.7.10-10.13.0.1180-sources.jar!/net/minecraftforge/client/ForgeHooksClient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="479" column="29" selection-start="18480" selection-end="18480" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="8534" />
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/minecraft/net/minecraftforge/forge/1.7.10-10.13.0.1180/forgeSrc-1.7.10-10.13.0.1180-sources.jar!/net/minecraft/client/renderer/WorldRenderer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="264" column="51" selection-start="10629" selection-end="10629" vertical-scroll-proportion="0.0" vertical-offset="4488" max-vertical-offset="5916" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/dan200/billund/shared/item/ItemBrick.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="172" column="37" selection-start="6706" selection-end="6706" vertical-scroll-proportion="0.0" vertical-offset="2924" max-vertical-offset="3536">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/dan200/billund/shared/tile/TileEntityBillund.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="47" column="68" selection-start="2122" selection-end="2122" vertical-scroll-proportion="0.0" vertical-offset="799" max-vertical-offset="6817" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/dan200/billund/shared/core/BillundProxyCommon.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="35" column="17" selection-start="1030" selection-end="1030" vertical-scroll-proportion="0.0" vertical-offset="787" max-vertical-offset="1649">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/dan200/billund/client/render/ModelParachute.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="78" column="0" selection-start="2620" selection-end="2620" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1428">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/dan200/billund/client/RenderAirDrop.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/dan200/billund/client/render/RenderAirDrop.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="39" column="45" selection-start="1610" selection-end="1610" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1020">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/dan200/billund/server/BillundProxyServer.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/dan200/billund/shared/core/BuildInfo.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="0" selection-start="486" selection-end="486" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="391">
-          <folding />
-        </state>
+        <state line="8" column="13" selection-start="243" selection-end="243" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="272" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/dan200/billund/shared/BillundSet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="35" selection-start="308" selection-end="308" vertical-scroll-proportion="0.0" vertical-offset="1690" max-vertical-offset="2278">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/dan200/billund/shared/Brick.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="0" selection-start="251" selection-end="251" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="510">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/dan200/billund/shared/BuildInfo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="13" selection-start="243" selection-end="243" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="272">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/dan200/billund/shared/CreativeTabBillund.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/dan200/billund/shared/core/CreativeTabBillund.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="21" column="42" selection-start="598" selection-end="598" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="561">
           <folding>
-            <element signature="e#554#555#0" expanded="true" />
-            <element signature="e#603#604#0" expanded="true" />
+            <element signature="e#650#651#0" expanded="false" />
+            <element signature="e#699#700#0" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/dan200/billund/shared/EntityAirDrop.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="103" column="40" selection-start="3242" selection-end="3242" vertical-scroll-proportion="0.0" vertical-offset="1847" max-vertical-offset="2414">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/dan200/billund/shared/IBillundProxy.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="20" selection-start="312" selection-end="312" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="272">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/dan200/billund/shared/ItemOrderForm.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="38" column="37" selection-start="1163" selection-end="1163" vertical-scroll-proportion="0.0" vertical-offset="255" max-vertical-offset="901">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/dan200/billund/shared/Stud.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="0" selection-start="250" selection-end="250" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="629">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/dan200/billund/shared/StudColour.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="0" selection-start="256" selection-end="256" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="578">
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="jar://$USER_HOME$/.gradle/caches/minecraft/net/minecraftforge/forge/1.7.10-10.13.0.1180/forgeSrc-1.7.10-10.13.0.1180-sources.jar!/cpw/mods/fml/common/gameevent/TickEvent.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="58" column="24" selection-start="1642" selection-end="1642" vertical-scroll-proportion="0.5952381" vertical-offset="568" max-vertical-offset="1156">
+        <state line="58" column="24" selection-start="1642" selection-end="1642" vertical-scroll-proportion="0.5952381" vertical-offset="568" max-vertical-offset="1156" />
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/minecraft/net/minecraftforge/forge/1.7.10-10.13.0.1180/forgeSrc-1.7.10-10.13.0.1180-sources.jar!/net/minecraftforge/client/event/RenderWorldEvent.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="28" column="16" selection-start="921" selection-end="921" vertical-scroll-proportion="0.0" vertical-offset="143" max-vertical-offset="697" />
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/minecraft/net/minecraftforge/forge/1.7.10-10.13.0.1180/forgeSrc-1.7.10-10.13.0.1180-sources.jar!/net/minecraftforge/client/ForgeHooksClient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="479" column="29" selection-start="18480" selection-end="18480" vertical-scroll-proportion="0.0" vertical-offset="6739" max-vertical-offset="7293" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/dan200/billund/shared/network/PacketHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="87" selection-start="551" selection-end="551" vertical-scroll-proportion="0.43367347" vertical-offset="0" max-vertical-offset="588" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/dan200/billund/shared/handler/GuiHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="32" selection-start="691" selection-end="691" vertical-scroll-proportion="0.664966" vertical-offset="0" max-vertical-offset="588">
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/dan200/billund/shared/item/ItemOrderForm.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="45" column="23" selection-start="1452" selection-end="1452" vertical-scroll-proportion="0.0" vertical-offset="255" max-vertical-offset="867" />
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/minecraft/net/minecraftforge/forge/1.7.10-10.13.0.1180/forgeSrc-1.7.10-10.13.0.1180-sources.jar!/cpw/mods/fml/common/network/NetworkRegistry.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="262" column="0" selection-start="10468" selection-end="10468" vertical-scroll-proportion="0.0" vertical-offset="3688" max-vertical-offset="4862" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/dan200/billund/shared/entity/EntityAirDrop.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="61" column="0" selection-start="1557" selection-end="1557" vertical-scroll-proportion="0.3265306" vertical-offset="692" max-vertical-offset="2414" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/run/crash-reports/crash-2014-08-05_23.00.05-client.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="7" selection-start="431" selection-end="431" vertical-scroll-proportion="0.21565217" vertical-offset="46" max-vertical-offset="2006" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/dan200/billund/shared/data/BillundSet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="13" selection-start="374" selection-end="374" vertical-scroll-proportion="-2.6717687" vertical-offset="1707" max-vertical-offset="2295">
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/minecraft/net/minecraftforge/forge/1.7.10-10.13.0.1180/forgeSrc-1.7.10-10.13.0.1180-sources.jar!/net/minecraft/client/renderer/RenderHelper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="13" selection-start="246" selection-end="246" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1513" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/dan200/billund/shared/helper/EmeraldHelper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="36" selection-start="410" selection-end="410" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1173" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/dan200/billund/shared/network/message/MessageOrder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="37" column="25" selection-start="1160" selection-end="1160" vertical-scroll-proportion="0.77034885" vertical-offset="364" max-vertical-offset="952" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/dan200/billund/client/gui/GuiOrderForm.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="155" column="61" selection-start="5023" selection-end="5023" vertical-scroll-proportion="0.87009066" vertical-offset="2160" max-vertical-offset="3196" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/dan200/billund/shared/core/BillundProxyCommon.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="44" column="75" selection-start="1859" selection-end="1859" vertical-scroll-proportion="0.0" vertical-offset="319" max-vertical-offset="680">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/dan200/billund/client/BillundProxyClient.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/dan200/billund/shared/data/Brick.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="431" column="78" selection-start="19507" selection-end="19507" vertical-scroll-proportion="0.73391306" vertical-offset="6905" max-vertical-offset="7480">
+        <state line="8" column="13" selection-start="248" selection-end="248" vertical-scroll-proportion="0.0" vertical-offset="187" max-vertical-offset="510">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/dan200/billund/shared/data/StudColour.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="13" selection-start="248" selection-end="248" vertical-scroll-proportion="0.119929455" vertical-offset="0" max-vertical-offset="578">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/minecraft/net/minecraftforge/forge/1.7.10-10.13.0.1180/forgeSrc-1.7.10-10.13.0.1180-sources.jar!/net/minecraft/client/renderer/entity/RenderItem.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="176" column="49" selection-start="6869" selection-end="6869" vertical-scroll-proportion="-2.8461537" vertical-offset="2425" max-vertical-offset="13787">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/dan200/billund/client/render/BrickItemRenderer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="46" column="43" selection-start="1377" selection-end="1377" vertical-scroll-proportion="0.0" vertical-offset="466" max-vertical-offset="1224">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/dan200/billund/shared/handler/EntityEventHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="19" selection-start="730" selection-end="730" vertical-scroll-proportion="0.0" vertical-offset="277" max-vertical-offset="1020">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/minecraft/net/minecraftforge/forge/1.7.10-10.13.0.1180/forgeSrc-1.7.10-10.13.0.1180-sources.jar!/net/minecraft/item/ItemArmor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="202" column="16" selection-start="7504" selection-end="7504" vertical-scroll-proportion="0.0" vertical-offset="3199" max-vertical-offset="5729">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/minecraft/net/minecraftforge/forge/1.7.10-10.13.0.1180/forgeSrc-1.7.10-10.13.0.1180-sources.jar!/net/minecraft/item/crafting/RecipesArmorDyes.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="113" column="21" selection-start="3810" selection-end="3811" vertical-scroll-proportion="0.0" vertical-offset="2051" max-vertical-offset="2618">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/minecraft/net/minecraftforge/forge/1.7.10-10.13.0.1180/forgeSrc-1.7.10-10.13.0.1180-sources.jar!/net/minecraft/client/renderer/entity/RenderSheep.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="38" column="47" selection-start="1559" selection-end="1559" vertical-scroll-proportion="0.0" vertical-offset="614" max-vertical-offset="1326">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.7.0_40/src.zip!/java/awt/Color.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="396" column="0" selection-start="11365" selection-end="11365" vertical-scroll-proportion="0.0" vertical-offset="5965" max-vertical-offset="20757">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/dan200/billund/shared/data/Stud.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="13" selection-start="248" selection-end="248" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="629">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.7.0_40/src.zip!/javax/swing/ClientPropertyKey.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="59" column="5" selection-start="1839" selection-end="1839" vertical-scroll-proportion="0.0" vertical-offset="423" max-vertical-offset="1717">
           <folding>
-            <element signature="n#!!doc" expanded="true" />
-            <element signature="imports" expanded="true" />
-            <element signature="e#4852#4853#0" expanded="true" />
-            <element signature="e#4926#4927#0" expanded="true" />
+            <element signature="e#0#3671#0" expanded="false" />
+            <element signature="e#2691#2889#0" expanded="false" />
+            <element signature="e#2874#2875#0" expanded="false" />
+            <element signature="e#3618#3619#0" expanded="false" />
+            <element signature="e#3667#3668#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/dan200/billund/client/GuiOrderForm.java">
+    <entry file="jar://$USER_HOME$/.gradle/caches/minecraft/net/minecraftforge/forge/1.7.10-10.13.0.1180/forgeSrc-1.7.10-10.13.0.1180-sources.jar!/net/minecraft/client/renderer/Tessellator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="166" column="77" selection-start="5103" selection-end="5343" vertical-scroll-proportion="0.0" vertical-offset="2431" max-vertical-offset="3502">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state line="247" column="17" selection-start="9069" selection-end="9069" vertical-scroll-proportion="0.33212996" vertical-offset="3828" max-vertical-offset="8568">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/minecraft/net/minecraftforge/forge/1.7.10-10.13.0.1180/forgeSrc-1.7.10-10.13.0.1180-sources.jar!/net/minecraft/entity/passive/EntitySheep.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="47" column="34" selection-start="1878" selection-end="1878" vertical-scroll-proportion="0.0" vertical-offset="105" max-vertical-offset="5406">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/minecraft/net/minecraftforge/forge/1.7.10-10.13.0.1180/forgeSrc-1.7.10-10.13.0.1180-sources.jar!/net/minecraft/client/renderer/tileentity/TileEntityRendererPiston.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="31" column="63" selection-start="1275" selection-end="1326" vertical-scroll-proportion="0.4904348" vertical-offset="7" max-vertical-offset="1258">
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/dan200/Billund.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="26" selection-start="820" selection-end="820" vertical-scroll-proportion="0.0" vertical-offset="207" max-vertical-offset="2057">
+        <state line="25" column="24" selection-start="812" selection-end="812" vertical-scroll-proportion="0.0" vertical-offset="173" max-vertical-offset="901">
           <folding>
-            <element signature="n#!!doc" expanded="true" />
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/dan200/billund/shared/BillundProxyCommon.java">
+    <entry file="jar://$USER_HOME$/.gradle/caches/minecraft/net/minecraftforge/forge/1.7.10-10.13.0.1180/forgeSrc-1.7.10-10.13.0.1180-sources.jar!/cpw/mods/fml/client/registry/RenderingRegistry.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="35" column="17" selection-start="1030" selection-end="1030" vertical-scroll-proportion="0.0" vertical-offset="787" max-vertical-offset="1649">
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/dan200/billund/shared/ItemBrick.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="172" column="37" selection-start="6706" selection-end="6706" vertical-scroll-proportion="0.0" vertical-offset="2525" max-vertical-offset="3298">
+        <state line="113" column="25" selection-start="3372" selection-end="3372" vertical-scroll-proportion="0.0" vertical-offset="1477" max-vertical-offset="2108">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/dan200/billund/shared/TileEntityBillund.java">
+    <entry file="jar://$USER_HOME$/.gradle/caches/minecraft/net/minecraftforge/forge/1.7.10-10.13.0.1180/forgeSrc-1.7.10-10.13.0.1180-sources.jar!/net/minecraft/src/FMLRenderAccessLibrary.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="47" column="68" selection-start="2122" selection-end="2122" vertical-scroll-proportion="0.0" vertical-offset="1195" max-vertical-offset="6596">
+        <state line="50" column="38" selection-start="1379" selection-end="1379" vertical-scroll-proportion="0.0" vertical-offset="449" max-vertical-offset="1003">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/dan200/billund/shared/BlockBillund.java">
+    <entry file="jar://$USER_HOME$/.gradle/caches/minecraft/net/minecraftforge/forge/1.7.10-10.13.0.1180/forgeSrc-1.7.10-10.13.0.1180-sources.jar!/net/minecraft/client/renderer/RenderBlocks.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="116" column="36" selection-start="4122" selection-end="4122" vertical-scroll-proportion="1.1575757" vertical-offset="1522" max-vertical-offset="5406">
+        <state line="370" column="13" selection-start="14296" selection-end="14296" vertical-scroll-proportion="0.0" vertical-offset="5136" max-vertical-offset="144109">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/minecraft/net/minecraftforge/forge/1.7.10-10.13.0.1180/forgeSrc-1.7.10-10.13.0.1180-sources.jar!/net/minecraft/client/renderer/WorldRenderer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="221" column="0" selection-start="9228" selection-end="9228" vertical-scroll-proportion="0.4695652" vertical-offset="3147" max-vertical-offset="5916">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/dan200/billund/shared/block/BlockBillund.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="52" column="0" selection-start="1578" selection-end="1578" vertical-scroll-proportion="0.0" vertical-offset="51" max-vertical-offset="4284">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/dan200/billund/shared/item/ItemBrick.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="142" column="41" selection-start="5779" selection-end="5779" vertical-scroll-proportion="0.0" vertical-offset="1862" max-vertical-offset="3451">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/dan200/billund/shared/tile/TileEntityBillund.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="113" column="26" selection-start="5344" selection-end="5344" vertical-scroll-proportion="0.0" vertical-offset="1542" max-vertical-offset="6596">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/dan200/billund/client/render/BrickBlockRenderer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="37" column="86" selection-start="1972" selection-end="1972" vertical-scroll-proportion="0.0" vertical-offset="330" max-vertical-offset="1088">
           <folding>
-            <element signature="n#!!doc" expanded="true" />
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/dan200/billund/client/core/BillundProxyClient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="28" column="102" selection-start="1148" selection-end="1148" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="408">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/dan200/billund/client/handler/RenderEventHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="39" column="46" selection-start="1771" selection-end="1771" vertical-scroll-proportion="0.0" vertical-offset="357" max-vertical-offset="782">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/dan200/billund/client/helper/BrickRenderHelper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="83" column="56" selection-start="3625" selection-end="3625" vertical-scroll-proportion="0.7382671" vertical-offset="832" max-vertical-offset="4114">
+          <folding />
         </state>
       </provider>
     </entry>

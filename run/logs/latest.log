@@ -1,9 +1,9 @@
-[13:41:27] [main/INFO]: Setting user: ForgeDevName
-[13:41:29] [Client thread/INFO]: LWJGL Version: 2.9.1
-[13:41:37] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:CCMODNAME
-[13:41:38] [Sound Library Loader/INFO]: Sound engine started
-[13:41:40] [Client thread/INFO]: Created: 512x256 textures/blocks-atlas
-[13:41:41] [Client thread/ERROR]: Using missing texture, unable to load minecraft:textures/items/MISSING_ICON_ITEM_4096_billbrick.png
+[21:51:55] [main/INFO]: Setting user: ForgeDevName
+[21:51:57] [Client thread/INFO]: LWJGL Version: 2.9.1
+[21:52:08] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:CCMODNAME
+[21:52:09] [Sound Library Loader/INFO]: Sound engine started
+[21:52:11] [Client thread/INFO]: Created: 512x256 textures/blocks-atlas
+[21:52:12] [Client thread/ERROR]: Using missing texture, unable to load minecraft:textures/items/MISSING_ICON_ITEM_4096_billbrick.png
 java.io.FileNotFoundException: minecraft:textures/items/MISSING_ICON_ITEM_4096_billbrick.png
 	at net.minecraft.client.resources.FallbackResourceManager.getResource(FallbackResourceManager.java:65) ~[FallbackResourceManager.class:?]
 	at net.minecraft.client.resources.SimpleReloadableResourceManager.getResource(SimpleReloadableResourceManager.java:67) ~[SimpleReloadableResourceManager.class:?]
@@ -28,9 +28,9 @@ java.io.FileNotFoundException: minecraft:textures/items/MISSING_ICON_ITEM_4096_b
 	at GradleStart.bounce(GradleStart.java:108) [start/:?]
 	at GradleStart.startClient(GradleStart.java:101) [start/:?]
 	at GradleStart.main(GradleStart.java:56) [start/:?]
-[13:41:41] [Client thread/INFO]: Created: 256x256 textures/items-atlas
-[13:41:41] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:CCMODNAME
-[13:41:41] [Client thread/ERROR]: Using missing texture, unable to load minecraft:textures/items/MISSING_ICON_ITEM_4096_billbrick.png
+[21:52:12] [Client thread/INFO]: Created: 256x256 textures/items-atlas
+[21:52:12] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:CCMODNAME
+[21:52:12] [Client thread/ERROR]: Using missing texture, unable to load minecraft:textures/items/MISSING_ICON_ITEM_4096_billbrick.png
 java.io.FileNotFoundException: minecraft:textures/items/MISSING_ICON_ITEM_4096_billbrick.png
 	at net.minecraft.client.resources.FallbackResourceManager.getResource(FallbackResourceManager.java:65) ~[FallbackResourceManager.class:?]
 	at net.minecraft.client.resources.SimpleReloadableResourceManager.getResource(SimpleReloadableResourceManager.java:67) ~[SimpleReloadableResourceManager.class:?]
@@ -58,29 +58,23 @@ java.io.FileNotFoundException: minecraft:textures/items/MISSING_ICON_ITEM_4096_b
 	at GradleStart.bounce(GradleStart.java:108) [start/:?]
 	at GradleStart.startClient(GradleStart.java:101) [start/:?]
 	at GradleStart.main(GradleStart.java:56) [start/:?]
-[13:41:41] [Client thread/INFO]: Created: 256x256 textures/items-atlas
-[13:41:42] [Client thread/INFO]: Created: 512x256 textures/blocks-atlas
-[13:41:43] [Sound Library Loader/INFO]: Sound engine started
-[13:41:46] [Server thread/INFO]: Starting integrated minecraft server version 1.7.10
-[13:41:46] [Server thread/INFO]: Generating keypair
-[13:41:47] [Server thread/INFO]: Preparing start region for level 0
-[13:41:48] [Server thread/INFO]: Changing view distance to 12, from 10
-[13:41:48] [Server thread/INFO]: ForgeDevName[local:E:4c776dd7] logged in with entity id 160 at (920.5161695589777, 4.0, 741.6625568664608)
-[13:41:48] [Server thread/INFO]: ForgeDevName joined the game
-[13:42:27] [Server thread/INFO]: Saving and pausing game...
-[13:42:27] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
-[13:42:27] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
-[13:42:27] [Server thread/INFO]: Saving chunks for level 'New World'/The End
-[13:53:06] [Server thread/INFO]: [ForgeDevName: Set own game mode to Survival Mode]
-[13:53:06] [Client thread/INFO]: [CHAT] Your game mode has been updated
-[13:53:24] [Server thread/INFO]: Saving and pausing game...
-[13:53:24] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
-[13:53:24] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
-[13:53:24] [Server thread/INFO]: Saving chunks for level 'New World'/The End
-[13:53:24] [Server thread/INFO]: Stopping server
-[13:53:24] [Server thread/INFO]: Saving players
-[13:53:24] [Server thread/INFO]: Saving worlds
-[13:53:24] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
-[13:53:24] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
-[13:53:24] [Server thread/INFO]: Saving chunks for level 'New World'/The End
-[13:53:25] [Client thread/INFO]: Stopping!
+[21:52:12] [Client thread/INFO]: Created: 256x256 textures/items-atlas
+[21:52:12] [Client thread/INFO]: Created: 512x256 textures/blocks-atlas
+[21:52:13] [Sound Library Loader/INFO]: Sound engine started
+[21:52:19] [Server thread/INFO]: Starting integrated minecraft server version 1.7.10
+[21:52:19] [Server thread/INFO]: Generating keypair
+[21:52:19] [Server thread/INFO]: Preparing start region for level 0
+[21:52:20] [Server thread/INFO]: Changing view distance to 12, from 10
+[21:52:21] [Server thread/INFO]: ForgeDevName[local:E:afeb8691] logged in with entity id 177 at (928.9661750975532, 4.0, 739.2906060633031)
+[21:52:21] [Server thread/INFO]: ForgeDevName joined the game
+[21:54:42] [Server thread/INFO]: Saving and pausing game...
+[21:54:42] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
+[21:54:43] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
+[21:54:43] [Server thread/INFO]: Saving chunks for level 'New World'/The End
+[21:54:43] [Server thread/INFO]: Stopping server
+[21:54:43] [Server thread/INFO]: Saving players
+[21:54:43] [Server thread/INFO]: Saving worlds
+[21:54:43] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
+[21:54:43] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
+[21:54:43] [Server thread/INFO]: Saving chunks for level 'New World'/The End
+[21:54:45] [Client thread/INFO]: Stopping!
