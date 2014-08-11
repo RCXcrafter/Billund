@@ -27,55 +27,7 @@ public class ClientTickHandler {
                 MessageRotate messageRotate = new MessageRotate();
                 messageRotate.rotate = BillundProxyCommon.rotate;
                 PacketHandler.INSTANCE.sendToServer(messageRotate);
-                System.out.println(BillundProxyCommon.rotate);
             }
-
-//            if (lastSlot != player.inventory.currentItem) {
-//                offsetX = 0;
-//                offsetZ = 0;
-//                lastSlot = player.inventory.currentItem;
-//            }
-
-//            if (GuiScreen.isShiftKeyDown()) {
-//                int rotation = MathHelper.floor_double((double) (player.rotationYaw * 4.0F / 360.0F) + 0.5D) & 3;
-//                GameSettings gameSettings = Minecraft.getMinecraft().gameSettings;
-//
-//                if (gameSettings.keyBindForward.isPressed()) {
-//                    switch (rotation) {
-//                        case 0: offsetZ++; break;
-//                        case 1: offsetX--; break;
-//                        case 2: offsetZ--; break;
-//                        case 3: offsetX++; break;
-//                    }
-//                }
-//
-//                if (gameSettings.keyBindBack.isPressed()) {
-//                    switch (rotation) {
-//                        case 0: offsetZ--; break;
-//                        case 1: offsetX++; break;
-//                        case 2: offsetZ++; break;
-//                        case 3: offsetX--; break;
-//                    }
-//                }
-//
-//                if (gameSettings.keyBindLeft.isPressed()) {
-//                    switch (rotation) {
-//                        case 0: offsetX++; break;
-//                        case 1: offsetZ++; break;
-//                        case 2: offsetX--; break;
-//                        case 3: offsetZ--; break;
-//                    }
-//                }
-//
-//                if (gameSettings.keyBindRight.isPressed()) {
-//                    switch (rotation) {
-//                        case 0: offsetX--; break;
-//                        case 1: offsetZ--; break;
-//                        case 2: offsetX++; break;
-//                        case 3: offsetZ++; break;
-//                    }
-//                }
-//            }
         }
     }
 }
