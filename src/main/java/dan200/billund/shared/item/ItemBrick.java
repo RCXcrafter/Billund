@@ -10,7 +10,6 @@ import dan200.billund.Billund;
 import dan200.billund.shared.core.BillundProxyCommon;
 import dan200.billund.shared.data.Brick;
 import dan200.billund.shared.data.Stud;
-import dan200.billund.shared.data.StudColour;
 import dan200.billund.shared.tile.TileEntityBillund;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.entity.player.EntityPlayer;
@@ -36,12 +35,17 @@ public class ItemBrick extends Item {
         setCreativeTab(Billund.getCreativeTab());
     }
 
-    public static ItemStack create(boolean illuminated, int colour, int width, int depth, int quantity) {
+    public static ItemStack create(int color, int width, int depth, int quantity) {
+        return create(false, false, color, width, depth, quantity);
+    }
+
+    public static ItemStack create(boolean illuminated, boolean transparent, int colour, int width, int depth, int quantity) {
         int damage = ((width - 1) & 0x1) + (((depth - 1) & 0x7) << 1);
         ItemStack stack = new ItemStack(BillundItems.brick, quantity, damage);
         NBTTagCompound nbt = new NBTTagCompound();
         nbt.setInteger("color", colour);
         nbt.setBoolean("illuminated", illuminated);
+        nbt.setBoolean("transparent", transparent);
         stack.setTagCompound(nbt);
         return stack;
     }
@@ -50,15 +54,15 @@ public class ItemBrick extends Item {
     public void getSubItems(Item item, CreativeTabs tabs, List list) {
         for (int i = 0; i < ItemDye.field_150922_c.length; i++) {
             int colour = ItemDye.field_150922_c[i];
-            list.add(create(false, colour, 1, 1, 1));
-            list.add(create(false, colour, 1, 2, 1));
-            list.add(create(false, colour, 1, 3, 1));
-            list.add(create(false, colour, 1, 4, 1));
-            list.add(create(false, colour, 1, 6, 1));
-            list.add(create(false, colour, 2, 2, 1));
-            list.add(create(false, colour, 2, 3, 1));
-            list.add(create(false, colour, 2, 4, 1));
-            list.add(create(false, colour, 2, 6, 1));
+            list.add(create(colour, 1, 1, 1));
+            list.add(create(colour, 1, 2, 1));
+            list.add(create(colour, 1, 3, 1));
+            list.add(create(colour, 1, 4, 1));
+            list.add(create(colour, 1, 6, 1));
+            list.add(create(colour, 2, 2, 1));
+            list.add(create(colour, 2, 3, 1));
+            list.add(create(colour, 2, 4, 1));
+            list.add(create(colour, 2, 6, 1));
         }
     }
 
@@ -148,13 +152,13 @@ public class ItemBrick extends Item {
             }
 
             // Try a few positions nearby
-            Brick brick = new Brick(getIlluminated(stack), getColour(stack), placeX, placeY, placeZ, width, height, depth);
+            Brick brick = new Brick(getIlluminated(stack), getTransparent(stack), getColour(stack), placeX, placeY, placeZ, width, height, depth);
             for (int x = 0; x < width; ++x) {
                 for (int z = 0; z < depth; ++z) {
                     for (int y = 0; y < height; ++y) {
-                        brick.XOrigin = placeX - x;
-                        brick.YOrigin = placeY - y;
-                        brick.ZOrigin = placeZ - z;
+                        brick.xOrigin = placeX - x;
+                        brick.yOrigin = placeY - y;
+                        brick.zOrigin = placeZ - z;
                         if (TileEntityBillund.canAddBrick(world, brick)) {
                             return brick;
                         }
@@ -170,8 +174,8 @@ public class ItemBrick extends Item {
         TileEntityBillund.StudRaycastResult result = raycastFromPlayer(world, player, f);
         if (result != null) {
             Stud stud = TileEntityBillund.getStud(world, result.hitX, result.hitY, result.hitZ);
-            if (stud != null && stud.Colour != StudColour.Wall) {
-                return new Brick(stud.Illuminated, stud.Colour, stud.XOrigin, stud.YOrigin, stud.ZOrigin, stud.BrickWidth, stud.BrickHeight, stud.BrickDepth);
+            if (stud != null) {
+                return new Brick(stud.illuminated, stud.transparent, stud.color, stud.xOrigin, stud.yOrigin, stud.zOrigin, stud.brickWidth, stud.brickHeight, stud.brickDepth);
             }
         }
         return null;
@@ -180,7 +184,11 @@ public class ItemBrick extends Item {
     @Override
     public void addInformation(ItemStack stack, EntityPlayer player, List list, boolean debug) {
         if (getIlluminated(stack)) {
-            list.add("Illuminated");
+            list.add("illuminated");
+        }
+
+        if (getTransparent(stack)) {
+            list.add("Transparent");
         }
     }
 
@@ -241,5 +249,9 @@ public class ItemBrick extends Item {
 
     public static boolean getIlluminated(ItemStack stack) {
         return stack.hasTagCompound() ? stack.getTagCompound().getBoolean("illuminated") : false;
+    }
+
+    public static boolean getTransparent(ItemStack stack) {
+        return stack.hasTagCompound() ? stack.getTagCompound().getBoolean("transparent") : false;
     }
 }

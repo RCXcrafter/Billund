@@ -8,23 +8,25 @@ package dan200.billund.shared.data;
 
 public class Brick {
 
-    public boolean Illuminated;
-    public int Colour;
-    public int XOrigin;
-    public int YOrigin;
-    public int ZOrigin;
-    public int Width;
-    public int Height;
-    public int Depth;
+    public boolean illuminated;
+    public boolean transparent;
+    public int color;
+    public int xOrigin;
+    public int yOrigin;
+    public int zOrigin;
+    public int width;
+    public int height;
+    public int depth;
 
-    public Brick(boolean illuminated, int colour, int xOrigin, int yOrigin, int zOrigin, int width, int height, int depth) {
-        Illuminated = illuminated;
-        Colour = colour;
-        XOrigin = xOrigin;
-        YOrigin = yOrigin;
-        ZOrigin = zOrigin;
-        Width = width;
-        Height = height;
-        Depth = depth;
+    public Brick(boolean illuminated, boolean transparent, int color, int xOrigin, int yOrigin, int zOrigin, int width, int height, int depth) {
+        this.illuminated = illuminated;
+        this.transparent = transparent;
+        this.color = color;
+        this.xOrigin = xOrigin;
+        this.yOrigin = yOrigin;
+        this.zOrigin = zOrigin;
+        this.width = width;
+        this.height = height;
+        this.depth = depth;
     }
 }

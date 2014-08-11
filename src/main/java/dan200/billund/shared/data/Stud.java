@@ -8,30 +8,32 @@ package dan200.billund.shared.data;
 
 public class Stud {
 
-    public boolean Illuminated;
-    public int Colour;
-    public int XOrigin;
-    public int YOrigin;
-    public int ZOrigin;
-    public int BrickWidth;
-    public int BrickHeight;
-    public int BrickDepth;
+    public boolean illuminated;
+    public boolean transparent;
+    public int color;
+    public int xOrigin;
+    public int yOrigin;
+    public int zOrigin;
+    public int brickWidth;
+    public int brickHeight;
+    public int brickDepth;
 
     public Stud() {
     }
 
-    public Stud(boolean illuminated, int colour, int xOrigin, int yOrigin, int zOrigin, int width, int height, int depth) {
-        Illuminated = illuminated;
-        Colour = colour;
-        XOrigin = xOrigin;
-        YOrigin = yOrigin;
-        ZOrigin = zOrigin;
-        BrickWidth = width;
-        BrickHeight = height;
-        BrickDepth = depth;
+    public Stud(boolean illuminated, boolean transparent, int color, int xOrigin, int yOrigin, int zOrigin, int width, int height, int depth) {
+        this.illuminated = illuminated;
+        this.transparent = transparent;
+        this.color = color;
+        this.xOrigin = xOrigin;
+        this.yOrigin = yOrigin;
+        this.zOrigin = zOrigin;
+        brickWidth = width;
+        brickHeight = height;
+        brickDepth = depth;
     }
 
     public Stud(Brick brick, int xLocal, int yLocal, int zLocal) {
-        this(brick.Illuminated, brick.Colour, brick.XOrigin, brick.YOrigin, brick.ZOrigin, brick.Width, brick.Height, brick.Depth);
+        this(brick.illuminated, brick.transparent, brick.color, brick.xOrigin, brick.yOrigin, brick.zOrigin, brick.width, brick.height, brick.depth);
     }
 }

@@ -18,6 +18,8 @@ public class BrickBlockRenderer extends TileEntitySpecialRenderer {
         GL11.glColor4f(1.0f, 1.0f, 1.0f, 1.0f);
         GL11.glDisable(GL11.GL_LIGHTING);
         GL11.glDisable(GL11.GL_TEXTURE_2D);
+        GL11.glBlendFunc( GL11.GL_SRC_ALPHA, GL11.GL_ONE_MINUS_SRC_ALPHA );
+        GL11.glEnable(GL11.GL_BLEND);
 
         Tessellator tessellator = Tessellator.instance;
 
@@ -27,19 +29,19 @@ public class BrickBlockRenderer extends TileEntitySpecialRenderer {
             for (int y = 0; y < TileEntityBillund.STUDS_PER_COLUMN; ++y) {
                 for (int z = 0; z < TileEntityBillund.STUDS_PER_ROW; ++z) {
                     Stud stud = tile.getStudLocal(x, y, z);
-                    if (stud != null && !stud.Illuminated) {
+                    if (stud != null && !stud.illuminated) {
                         int sx = tile.xCoord * TileEntityBillund.STUDS_PER_ROW + x;
                         int sy = tile.yCoord * TileEntityBillund.STUDS_PER_COLUMN + y;
                         int sz = tile.zCoord * TileEntityBillund.STUDS_PER_ROW + z;
-                        if (stud.XOrigin == sx && stud.YOrigin == sy && stud.ZOrigin == sz) {
+                        if (stud.xOrigin == sx && stud.yOrigin == sy && stud.zOrigin == sz) {
                             // Draw the brick
                             int brightness = BillundBlocks.billund.getMixedBrightnessForBlock(tile.getWorldObj(), tile.xCoord, tile.yCoord, tile.zCoord);
 
                             tessellator.startDrawingQuads();
 
                             BrickRenderHelper.renderBrick(
-                                    tile.getWorldObj(), brightness, stud.Illuminated, stud.Colour, 1.0F,
-                                    sx, sy, sz, stud.BrickWidth, stud.BrickHeight, stud.BrickDepth
+                                    tile.getWorldObj(), brightness, stud.illuminated, stud.color, stud.transparent ? 0.8F : 1.0F,
+                                    sx, sy, sz, stud.brickWidth, stud.brickHeight, stud.brickDepth
                             );
 
                             tessellator.draw();
@@ -59,23 +61,20 @@ public class BrickBlockRenderer extends TileEntitySpecialRenderer {
             for (int y = 0; y < TileEntityBillund.STUDS_PER_COLUMN; ++y) {
                 for (int z = 0; z < TileEntityBillund.STUDS_PER_ROW; ++z) {
                     Stud stud = tile.getStudLocal(x, y, z);
-                    if (stud != null && stud.Illuminated) {
+                    if (stud != null && stud.illuminated) {
                         int sx = tile.xCoord * TileEntityBillund.STUDS_PER_ROW + x;
                         int sy = tile.yCoord * TileEntityBillund.STUDS_PER_COLUMN + y;
                         int sz = tile.zCoord * TileEntityBillund.STUDS_PER_ROW + z;
-                        if (stud.XOrigin == sx && stud.YOrigin == sy && stud.ZOrigin == sz) {
+                        if (stud.xOrigin == sx && stud.yOrigin == sy && stud.zOrigin == sz) {
                             // Draw the brick
                             int brightness = BillundBlocks.billund.getMixedBrightnessForBlock(tile.getWorldObj(), tile.xCoord, tile.yCoord, tile.zCoord);
 
                             tessellator.startDrawingQuads();
 
                             BrickRenderHelper.renderBrick(
-                                    tile.getWorldObj(), brightness, stud.Illuminated, stud.Colour, 1.0F,
-                                    sx, sy, sz, stud.BrickWidth, stud.BrickHeight, stud.BrickDepth
+                                    tile.getWorldObj(), brightness, stud.illuminated, stud.color, stud.transparent ? 0.8F : 1.0F,
+                                    sx, sy, sz, stud.brickWidth, stud.brickHeight, stud.brickDepth
                             );
-
-                            // Cleanup
-
 
                             tessellator.draw();
                         }

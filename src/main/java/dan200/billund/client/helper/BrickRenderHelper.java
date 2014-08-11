@@ -3,7 +3,6 @@ package dan200.billund.client.helper;
 import dan200.billund.shared.block.BillundBlocks;
 import dan200.billund.shared.data.Brick;
 import dan200.billund.shared.data.Stud;
-import dan200.billund.shared.data.StudColour;
 import dan200.billund.shared.item.ItemBrick;
 import dan200.billund.shared.tile.TileEntityBillund;
 import net.minecraft.client.renderer.Tessellator;
@@ -35,6 +34,7 @@ public class BrickRenderHelper {
         int brightness = 15;
 
         boolean illuminated = ItemBrick.getIlluminated(brick);
+        boolean transparent = ItemBrick.getTransparent(brick);
         int colour = ItemBrick.getColour(brick);
         int width = ItemBrick.getWidth(brick);
         int height = ItemBrick.getHeight(brick);
@@ -61,7 +61,7 @@ public class BrickRenderHelper {
 
         tessellator.startDrawingQuads();
         tessellator.setNormal(0.0f, -1.0f, 0.0f);
-        renderBrick(null, brightness, illuminated, colour, 1.0F, 0, 0, 0, width, height, depth);
+        renderBrick(null, brightness, illuminated, colour, transparent ? 0.65F : 1.0F, 0, 0, 0, width, height, depth);
         tessellator.draw();
 
         // Teardown
@@ -71,18 +71,18 @@ public class BrickRenderHelper {
     }
 
     public static void renderBrick(IBlockAccess world, Brick brick) {
-        int localX = (brick.XOrigin % TileEntityBillund.ROWS_PER_BLOCK + TileEntityBillund.ROWS_PER_BLOCK) % TileEntityBillund.ROWS_PER_BLOCK;
-        int localY = (brick.YOrigin % TileEntityBillund.LAYERS_PER_BLOCK + TileEntityBillund.LAYERS_PER_BLOCK) % TileEntityBillund.LAYERS_PER_BLOCK;
-        int localZ = (brick.ZOrigin % TileEntityBillund.ROWS_PER_BLOCK + TileEntityBillund.ROWS_PER_BLOCK) % TileEntityBillund.ROWS_PER_BLOCK;
-        int blockX = (brick.XOrigin - localX) / TileEntityBillund.ROWS_PER_BLOCK;
-        int blockY = (brick.YOrigin - localY) / TileEntityBillund.LAYERS_PER_BLOCK;
-        int blockZ = (brick.ZOrigin - localZ) / TileEntityBillund.ROWS_PER_BLOCK;
+        int localX = (brick.xOrigin % TileEntityBillund.ROWS_PER_BLOCK + TileEntityBillund.ROWS_PER_BLOCK) % TileEntityBillund.ROWS_PER_BLOCK;
+        int localY = (brick.yOrigin % TileEntityBillund.LAYERS_PER_BLOCK + TileEntityBillund.LAYERS_PER_BLOCK) % TileEntityBillund.LAYERS_PER_BLOCK;
+        int localZ = (brick.zOrigin % TileEntityBillund.ROWS_PER_BLOCK + TileEntityBillund.ROWS_PER_BLOCK) % TileEntityBillund.ROWS_PER_BLOCK;
+        int blockX = (brick.xOrigin - localX) / TileEntityBillund.ROWS_PER_BLOCK;
+        int blockY = (brick.yOrigin - localY) / TileEntityBillund.LAYERS_PER_BLOCK;
+        int blockZ = (brick.zOrigin - localZ) / TileEntityBillund.ROWS_PER_BLOCK;
 
         Tessellator tessellator = Tessellator.instance;
         int brightness = BillundBlocks.billund.getMixedBrightnessForBlock(world, blockX, blockY, blockZ);
 
         tessellator.startDrawingQuads();
-        renderBrick(world, brightness, brick.Illuminated, brick.Colour, 0.65F, brick.XOrigin, brick.YOrigin, brick.ZOrigin, brick.Width, brick.Height, brick.Depth);
+        renderBrick(world, brightness, brick.illuminated, brick.color, 0.65F, brick.xOrigin, brick.yOrigin, brick.zOrigin, brick.width, brick.height, brick.depth);
         tessellator.draw();
     }
 
@@ -123,7 +123,7 @@ public class BrickRenderHelper {
                 boolean drawStud;
                 if (world != null) {
                     Stud above = TileEntityBillund.getStud(world, snx, sny, snz);
-                    drawStud = (above == null) || (above.Colour == StudColour.TranslucentWall);
+                    drawStud = (above == null) || (above.transparent);
                 } else {
                     drawStud = true;
                 }

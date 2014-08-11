@@ -9,7 +9,6 @@ package dan200.billund.shared.tile;
 import dan200.billund.shared.block.BillundBlocks;
 import dan200.billund.shared.data.Brick;
 import dan200.billund.shared.data.Stud;
-import dan200.billund.shared.data.StudColour;
 import net.minecraft.block.Block;
 import net.minecraft.nbt.NBTTagCompound;
 import net.minecraft.network.NetworkManager;
@@ -50,8 +49,8 @@ public class TileEntityBillund extends TileEntity {
                     return billund.getStudLocal(localX, localY, localZ);
                 }
             } else if (!(block.isAir(world, blockX, blockY, blockZ))) {
-                int colour = block.isOpaqueCube() ? StudColour.Wall : StudColour.TranslucentWall;
-                return new Stud(false, colour, x, y, z, 1, 1, 1);
+                int colour = 0;
+                return new Stud(false, false, colour, x, y, z, 1, 1, 1);
             }
         }
         return null;
@@ -113,9 +112,9 @@ public class TileEntityBillund extends TileEntity {
     }
 
     public static boolean canAddBrick(World world, Brick brick) {
-        for (int x = brick.XOrigin; x < brick.XOrigin + brick.Width; ++x) {
-            for (int y = brick.YOrigin; y < brick.YOrigin + brick.Height; ++y) {
-                for (int z = brick.ZOrigin; z < brick.ZOrigin + brick.Depth; ++z) {
+        for (int x = brick.xOrigin; x < brick.xOrigin + brick.width; ++x) {
+            for (int y = brick.yOrigin; y < brick.yOrigin + brick.height; ++y) {
+                for (int z = brick.zOrigin; z < brick.zOrigin + brick.depth; ++z) {
                     if (!canSetStud(world, x, y, z)) {
                         return false;
                     }
@@ -126,10 +125,10 @@ public class TileEntityBillund extends TileEntity {
     }
 
     public static void addBrick(World world, Brick brick) {
-        for (int x = brick.XOrigin; x < brick.XOrigin + brick.Width; ++x) {
-            for (int y = brick.YOrigin; y < brick.YOrigin + brick.Height; ++y) {
-                for (int z = brick.ZOrigin; z < brick.ZOrigin + brick.Depth; ++z) {
-                    Stud stud = new Stud(brick, x - brick.XOrigin, y - brick.YOrigin, z - brick.ZOrigin);
+        for (int x = brick.xOrigin; x < brick.xOrigin + brick.width; ++x) {
+            for (int y = brick.yOrigin; y < brick.yOrigin + brick.height; ++y) {
+                for (int z = brick.zOrigin; z < brick.zOrigin + brick.depth; ++z) {
+                    Stud stud = new Stud(brick, x - brick.xOrigin, y - brick.yOrigin, z - brick.zOrigin);
                     setStud(world, x, y, z, stud);
                 }
             }
@@ -137,9 +136,9 @@ public class TileEntityBillund extends TileEntity {
     }
 
     public static void removeBrick(World world, Brick brick) {
-        for (int x = brick.XOrigin; x < brick.XOrigin + brick.Width; ++x) {
-            for (int y = brick.YOrigin; y < brick.YOrigin + brick.Height; ++y) {
-                for (int z = brick.ZOrigin; z < brick.ZOrigin + brick.Depth; ++z) {
+        for (int x = brick.xOrigin; x < brick.xOrigin + brick.width; ++x) {
+            for (int y = brick.yOrigin; y < brick.yOrigin + brick.height; ++y) {
+                for (int z = brick.zOrigin; z < brick.zOrigin + brick.depth; ++z) {
                     setStud(world, x, y, z, null);
                 }
             }
@@ -324,7 +323,7 @@ public class TileEntityBillund extends TileEntity {
         for (int i = 0; i < STUDS_PER_BLOCK; ++i) {
             Stud stud = m_studs[i];
             if (stud != null) {
-                Stud origin = getStud(worldObj, stud.XOrigin, stud.YOrigin, stud.ZOrigin);
+                Stud origin = getStud(worldObj, stud.xOrigin, stud.yOrigin, stud.zOrigin);
                 if (origin == null) {
                     m_studs[i] = null;
                     changed = true;
@@ -367,14 +366,15 @@ public class TileEntityBillund extends TileEntity {
             Stud stud = m_studs[i];
             if (stud != null) {
                 NBTTagCompound studTag = new NBTTagCompound();
-                studTag.setBoolean("i", stud.Illuminated);
-                studTag.setInteger("c", stud.Colour);
-                studTag.setInteger("x", stud.XOrigin);
-                studTag.setInteger("y", stud.YOrigin);
-                studTag.setInteger("z", stud.ZOrigin);
-                studTag.setInteger("w", stud.BrickWidth);
-                studTag.setInteger("h", stud.BrickHeight);
-                studTag.setInteger("d", stud.BrickDepth);
+                studTag.setBoolean("i", stud.illuminated);
+                studTag.setBoolean("t", stud.transparent);
+                studTag.setInteger("c", stud.color);
+                studTag.setInteger("x", stud.xOrigin);
+                studTag.setInteger("y", stud.yOrigin);
+                studTag.setInteger("z", stud.zOrigin);
+                studTag.setInteger("w", stud.brickWidth);
+                studTag.setInteger("h", stud.brickHeight);
+                studTag.setInteger("d", stud.brickDepth);
                 nbttagcompound.setTag("s" + i, studTag);
             }
         }
@@ -389,14 +389,15 @@ public class TileEntityBillund extends TileEntity {
             if (nbttagcompound.hasKey(key)) {
                 Stud stud = new Stud();
                 NBTTagCompound studTag = nbttagcompound.getCompoundTag(key);
-                stud.Illuminated = studTag.getBoolean("i");
-                stud.Colour = studTag.getInteger("c");
-                stud.XOrigin = studTag.getInteger("x");
-                stud.YOrigin = studTag.getInteger("y");
-                stud.ZOrigin = studTag.getInteger("z");
-                stud.BrickWidth = studTag.getInteger("w");
-                stud.BrickHeight = studTag.getInteger("h");
-                stud.BrickDepth = studTag.getInteger("d");
+                stud.illuminated = studTag.getBoolean("i");
+                stud.transparent = studTag.getBoolean("t");
+                stud.color = studTag.getInteger("c");
+                stud.xOrigin = studTag.getInteger("x");
+                stud.yOrigin = studTag.getInteger("y");
+                stud.zOrigin = studTag.getInteger("z");
+                stud.brickWidth = studTag.getInteger("w");
+                stud.brickHeight = studTag.getInteger("h");
+                stud.brickDepth = studTag.getInteger("d");
                 m_studs[i] = stud;
             } else {
                 m_studs[i] = null;

@@ -25,7 +25,7 @@ public class CreativeTabBillund extends CreativeTabs {
 
     @Override
     public ItemStack getIconItemStack() {
-        return ItemBrick.create(false, 11743532, 2, 2, 1);
+        return ItemBrick.create(11743532, 2, 2, 1);
     }
 
     @Override

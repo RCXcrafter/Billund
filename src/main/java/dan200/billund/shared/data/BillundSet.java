@@ -18,10 +18,10 @@ public class BillundSet {
 
     private static String[] s_setNames = new String[]{
             "Starter Pack",
-            "Colour Pack A",
-            "Colour Pack B",
-            "Colour Pack C",
-            "Colour Pack D",
+            "Color Pack A",
+            "Color Pack B",
+            "Color Pack C",
+            "Color Pack D",
     };
 
     private static int[] s_setCosts = new int[]{
@@ -57,49 +57,44 @@ public class BillundSet {
             case 0: {
                 // Starter set
                 // Basic pieces in 6 colours
-                addBasic(StudColour.Red);
-                addBasic(StudColour.Green);
-                add(null);
-
-                addBasic(StudColour.Blue);
-                addBasic(StudColour.Yellow);
-                add(null);
-
-                addBasic(StudColour.White);
-                addBasic(StudColour.Black);
-                add(null);
+                addBasic(Color.RED);
+                addBasic(Color.GREEN);
+                addBasic(Color.BLUE);
+                addBasic(Color.YELLOW);
+                addBasic(Color.WHITE);
+                addBasic(Color.BLACK);
                 break;
             }
             case 1: {
-                // Colour Pack
+                // color Pack
                 // pieces in 3 colours
-                addAll(StudColour.Red);
-                addAll(StudColour.Green);
-                addAll(StudColour.Blue);
+                addAll(Color.RED);
+                addAll(Color.GREEN);
+                addAll(Color.BLUE);
                 break;
             }
             case 2: {
-                // Colour Pack
+                // color Pack
                 // pieces in 3 colours
-                addAll(StudColour.Orange);
-                addAll(StudColour.Yellow);
-                addAll(StudColour.LightGreen);
+                addAll(Color.ORANGE);
+                addAll(Color.YELLOW);
+                addAll(Color.LIME);
                 break;
             }
             case 3: {
-                // Colour Pack
+                // color Pack
                 // pieces in 3 colours
-                addAll(StudColour.Pink);
-                addAll(StudColour.Purple);
-                addAll(StudColour.White);
+                addAll(Color.PINK);
+                addAll(Color.PURPLE);
+                addAll(Color.WHITE);
                 break;
             }
             case 4: {
-                // Colour Pack
+                // color Pack
                 // pieces in 3 colours
-                addAll(StudColour.LightGrey);
-                addAll(StudColour.DarkGrey);
-                addAll(StudColour.Black);
+                addAll(Color.LIGHT_GRAY);
+                addAll(Color.GRAY);
+                addAll(Color.BLACK);
                 break;
             }
         }
@@ -112,22 +107,22 @@ public class BillundSet {
         }
     }
 
-    private void addBasic(int colour) {
-        add(ItemBrick.create(false, colour, 1, 2, 24));
-        add(ItemBrick.create(false, colour, 1, 4, 24));
-        add(ItemBrick.create(false, colour, 2, 2, 24));
-        add(ItemBrick.create(false, colour, 2, 4, 24));
+    private void addBasic(Color colour) {
+        add(ItemBrick.create(colour.getRGB(), 1, 2, 24));
+        add(ItemBrick.create(colour.getRGB(), 1, 4, 24));
+        add(ItemBrick.create(colour.getRGB(), 2, 2, 24));
+        add(ItemBrick.create(colour.getRGB(), 2, 4, 24));
     }
 
-    private void addAll(int colour) {
-        add(ItemBrick.create(false, colour, 1, 1, 24));
-        add(ItemBrick.create(false, colour, 1, 2, 24));
-        add(ItemBrick.create(false, colour, 1, 3, 24));
-        add(ItemBrick.create(false, colour, 1, 4, 24));
-        add(ItemBrick.create(false, colour, 1, 6, 24));
-        add(ItemBrick.create(false, colour, 2, 2, 24));
-        add(ItemBrick.create(false, colour, 2, 3, 24));
-        add(ItemBrick.create(false, colour, 2, 4, 24));
-        add(ItemBrick.create(false, colour, 2, 6, 24));
+    private void addAll(Color colour) {
+        add(ItemBrick.create(colour.getRGB(), 1, 1, 24));
+        add(ItemBrick.create(colour.getRGB(), 1, 2, 24));
+        add(ItemBrick.create(colour.getRGB(), 1, 3, 24));
+        add(ItemBrick.create(colour.getRGB(), 1, 4, 24));
+        add(ItemBrick.create(colour.getRGB(), 1, 6, 24));
+        add(ItemBrick.create(colour.getRGB(), 2, 2, 24));
+        add(ItemBrick.create(colour.getRGB(), 2, 3, 24));
+        add(ItemBrick.create(colour.getRGB(), 2, 4, 24));
+        add(ItemBrick.create(colour.getRGB(), 2, 6, 24));
     }
 }

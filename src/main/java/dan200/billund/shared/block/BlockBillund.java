@@ -91,10 +91,10 @@ public class BlockBillund extends BlockContainer {
 
                     // Spawn an item for the destroyed brick
                     if (!player.capabilities.isCreativeMode) {
-                        float brickX = ((float) brick.XOrigin + (float) brick.Width * 0.5f) / (float) TileEntityBillund.ROWS_PER_BLOCK;
-                        float brickY = ((float) brick.YOrigin + (float) brick.Height) / (float) TileEntityBillund.LAYERS_PER_BLOCK;
-                        float brickZ = ((float) brick.ZOrigin + (float) brick.Depth * 0.5f) / (float) TileEntityBillund.ROWS_PER_BLOCK;
-                        ItemStack stack = ItemBrick.create(brick.Illuminated, brick.Colour, Math.min(brick.Width, brick.Depth), Math.max(brick.Width, brick.Depth), 1);
+                        float brickX = ((float) brick.xOrigin + (float) brick.width * 0.5f) / (float) TileEntityBillund.ROWS_PER_BLOCK;
+                        float brickY = ((float) brick.yOrigin + (float) brick.height) / (float) TileEntityBillund.LAYERS_PER_BLOCK;
+                        float brickZ = ((float) brick.zOrigin + (float) brick.depth * 0.5f) / (float) TileEntityBillund.ROWS_PER_BLOCK;
+                        ItemStack stack = ItemBrick.create(brick.illuminated, brick.transparent, brick.color, Math.min(brick.width, brick.depth), Math.max(brick.width, brick.depth), 1);
                         EntityItem entityitem = new EntityItem(world, brickX, brickY + 0.05f, brickZ, stack);
                         entityitem.motionX = 0.0f;
                         entityitem.motionY = 0.0f;
@@ -130,9 +130,9 @@ public class BlockBillund extends BlockContainer {
     public void setBlockBoundsBasedOnState(IBlockAccess world, int i, int j, int k) {
         if (s_hoverBrick != null) {
             // See if the hovered brick is in the start bit
-            int sx = s_hoverBrick.XOrigin;
-            int sy = s_hoverBrick.YOrigin;
-            int sz = s_hoverBrick.ZOrigin;
+            int sx = s_hoverBrick.xOrigin;
+            int sy = s_hoverBrick.yOrigin;
+            int sz = s_hoverBrick.zOrigin;
             {
                 int localX = (sx % TileEntityBillund.ROWS_PER_BLOCK + TileEntityBillund.ROWS_PER_BLOCK) % TileEntityBillund.ROWS_PER_BLOCK;
                 int localY = (sy % TileEntityBillund.LAYERS_PER_BLOCK + TileEntityBillund.LAYERS_PER_BLOCK) % TileEntityBillund.LAYERS_PER_BLOCK;
@@ -153,9 +153,9 @@ public class BlockBillund extends BlockContainer {
                     float startZ = (float) (sz - (k * TileEntityBillund.ROWS_PER_BLOCK)) * zScale;
                     this.setBlockBounds(
                             startX, startY, startZ,
-                            startX + (float) s_hoverBrick.Width * xScale,
-                            startY + (float) s_hoverBrick.Height * yScale,
-                            startZ + (float) s_hoverBrick.Depth * zScale
+                            startX + (float) s_hoverBrick.width * xScale,
+                            startY + (float) s_hoverBrick.height * yScale,
+                            startZ + (float) s_hoverBrick.depth * zScale
                     );
                     return;
                 }
@@ -200,7 +200,7 @@ public class BlockBillund extends BlockContainer {
                             double startX = originX + (double) x * stepX;
                             double startY = originY + (double) y * stepY;
                             double startZ = originZ + (double) z * stepZ;
-                            if (stud.XOrigin < minsx || stud.YOrigin < minsy || stud.ZOrigin < minsz) {
+                            if (stud.xOrigin < minsx || stud.yOrigin < minsy || stud.zOrigin < minsz) {
                                 // If the origin of this brick is in a different block, add our own aabbs for each stud
                                 AxisAlignedBB littleBox = AxisAlignedBB.getBoundingBox(
                                         startX, startY, startZ,
@@ -216,12 +216,12 @@ public class BlockBillund extends BlockContainer {
                                 int sx = x + minsx;
                                 int sy = y + minsy;
                                 int sz = z + minsz;
-                                if (sx == stud.XOrigin && sy == stud.YOrigin && sz == stud.ZOrigin) {
+                                if (sx == stud.xOrigin && sy == stud.yOrigin && sz == stud.zOrigin) {
                                     AxisAlignedBB littleBox = AxisAlignedBB.getBoundingBox(
                                             startX, startY, startZ,
-                                            startX + (double) stud.BrickWidth * stepX,
-                                            startY + (double) stud.BrickHeight * stepY,
-                                            startZ + (double) stud.BrickDepth * stepZ
+                                            startX + (double) stud.brickWidth * stepX,
+                                            startY + (double) stud.brickHeight * stepY,
+                                            startZ + (double) stud.brickDepth * stepZ
                                     );
                                     if (littleBox.intersectsWith(bigBox)) {
                                         list.add(littleBox);
@@ -265,8 +265,8 @@ public class BlockBillund extends BlockContainer {
                 ItemStack held = entityplayer.getHeldItem();
 
                 if (held != null && held.getItem() instanceof ItemDye) {
-                    Brick newBrick = new Brick(s_hoverBrick.Illuminated, s_hoverBrick.Colour, s_hoverBrick.XOrigin, s_hoverBrick.YOrigin, s_hoverBrick.ZOrigin, s_hoverBrick.Width, s_hoverBrick.Height, s_hoverBrick.Depth);
-                    Color brickColor = new Color(newBrick.Colour);
+                    Brick newBrick = new Brick(s_hoverBrick.illuminated, s_hoverBrick.transparent, s_hoverBrick.color, s_hoverBrick.xOrigin, s_hoverBrick.yOrigin, s_hoverBrick.zOrigin, s_hoverBrick.width, s_hoverBrick.height, s_hoverBrick.depth);
+                    Color brickColor = new Color(newBrick.color);
                     Color dyeColor = new Color(ItemDye.field_150922_c[held.getItemDamage()]);
                     int br = brickColor.getRed();
                     int bg = brickColor.getGreen();
@@ -277,7 +277,7 @@ public class BlockBillund extends BlockContainer {
                     int ar = (br + dr) / 2;
                     int ag = (bg + dg) / 2;
                     int ab = (bb + db) / 2;
-                    newBrick.Colour = new Color(ar, ag, ab).getRGB();
+                    newBrick.color = new Color(ar, ag, ab).getRGB();
                     TileEntityBillund.addBrick(world, newBrick);
                 }
             }

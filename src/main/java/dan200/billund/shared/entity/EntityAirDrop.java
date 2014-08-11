@@ -5,12 +5,15 @@ import cpw.mods.fml.relauncher.SideOnly;
 import dan200.billund.shared.data.BillundSet;
 import net.minecraft.block.Block;
 import net.minecraft.entity.Entity;
+import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.init.Blocks;
 import net.minecraft.inventory.IInventory;
 import net.minecraft.nbt.NBTTagCompound;
 import net.minecraft.tileentity.TileEntity;
 import net.minecraft.util.MathHelper;
 import net.minecraft.world.World;
+
+import java.util.List;
 
 public class EntityAirDrop extends Entity {
 
@@ -66,6 +69,12 @@ public class EntityAirDrop extends Entity {
                     MathHelper.floor_double(this.posZ)
             )) + 11.0f;
             if (this.posY <= deployHeight) {
+                this.deployed = true;
+            }
+
+            List<EntityLivingBase> list = this.worldObj.getEntitiesWithinAABBExcludingEntity(this, boundingBox);
+
+            if (list != null && !list.isEmpty()) {
                 this.deployed = true;
             }
         }

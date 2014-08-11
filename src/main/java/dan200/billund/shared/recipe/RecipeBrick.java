@@ -2,6 +2,8 @@ package dan200.billund.shared.recipe;
 
 import dan200.billund.shared.item.BillundItems;
 import dan200.billund.shared.item.ItemBrick;
+import net.minecraft.block.Block;
+import net.minecraft.init.Blocks;
 import net.minecraft.init.Items;
 import net.minecraft.inventory.InventoryCrafting;
 import net.minecraft.item.ItemDye;
@@ -23,7 +25,7 @@ public class RecipeBrick implements IRecipe {
             if (stack != null) {
                 if (stack.getItem() == BillundItems.brick) {
                     bricks++;
-                } else if (stack.getItem() == Items.dye || stack.getItem() == Items.glowstone_dust) {
+                } else if (stack.getItem() == Items.dye || stack.getItem() == Items.glowstone_dust || Block.getBlockFromItem(stack.getItem()) == Blocks.glass) {
                     components++;
                 }
             }
@@ -37,6 +39,7 @@ public class RecipeBrick implements IRecipe {
         ItemStack component = null;
         boolean dye = false;
         boolean light = false;
+        boolean glass = false;
         for (int i=0; i<inv.getSizeInventory(); i++) {
             ItemStack stack = inv.getStackInSlot(i);
             if (stack != null) {
@@ -48,12 +51,16 @@ public class RecipeBrick implements IRecipe {
                 } else if (stack.getItem() == Items.glowstone_dust) {
                     component = stack.copy();
                     light = true;
+                } else if (Block.getBlockFromItem(stack.getItem()) == Blocks.glass) {
+                    component = stack.copy();
+                    glass = true;
                 }
             }
         }
         if (dye) {
             return ItemBrick.create(
-                    false,
+                    ItemBrick.getIlluminated(brick),
+                    ItemBrick.getTransparent(brick),
                     ItemDye.field_150922_c[component.getItemDamage()],
                     ItemBrick.getWidth(brick),
                     ItemBrick.getDepth(brick),
@@ -61,6 +68,16 @@ public class RecipeBrick implements IRecipe {
             );
         } else if (light) {
             return ItemBrick.create(
+                    true,
+                    ItemBrick.getTransparent(brick),
+                    ItemBrick.getColour(brick),
+                    ItemBrick.getWidth(brick),
+                    ItemBrick.getDepth(brick),
+                    1
+            );
+        } else if (glass) {
+            return ItemBrick.create(
+                    ItemBrick.getIlluminated(brick),
                     true,
                     ItemBrick.getColour(brick),
                     ItemBrick.getWidth(brick),
