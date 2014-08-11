@@ -83,8 +83,6 @@ public class GuiOrderForm extends GuiScreen {
                         for (int i = 0; i < NUM_SETS; ++i) {
                             if (i == tickBoxIndex) {
                                 m_orders[i] = !m_orders[i];
-                            } else {
-                                m_orders[i] = false;
                             }
                         }
                     }
