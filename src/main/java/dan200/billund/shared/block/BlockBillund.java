@@ -116,6 +116,16 @@ public class BlockBillund extends BlockContainer {
     }
 
     @Override
+    public int getLightValue(IBlockAccess world, int x, int y, int z) {
+        TileEntity tileEntity = world.getTileEntity(x, y, z);
+        if (tileEntity != null && tileEntity instanceof TileEntityBillund) {
+            TileEntityBillund billund = (TileEntityBillund) tileEntity;
+            return billund.globalIllumination ? 15 : 0;
+        }
+        return 0;
+    }
+
+    @Override
     public void onNeighborBlockChange(World world, int i, int j, int k, Block block) {
         TileEntity tileEntity = world.getTileEntity(i, j, k);
         if (tileEntity != null && tileEntity instanceof TileEntityBillund) {
@@ -239,19 +249,6 @@ public class BlockBillund extends BlockContainer {
     @Override
     public ItemStack getPickBlock(MovingObjectPosition target, World world, int x, int y, int z) {
         return ItemBrick.create(s_hoverBrick.illuminated, s_hoverBrick.transparent, s_hoverBrick.color, s_hoverBrick.width, s_hoverBrick.depth, 1);
-    }
-
-    @Override
-    public void onBlockAdded(World world, int i, int j, int k) {
-        super.onBlockAdded(world, i, j, k);
-    }
-
-    @Override
-    public void onBlockPlacedBy(World world, int i, int j, int k, EntityLivingBase entityliving, ItemStack itemstack) {
-        super.onBlockPlacedBy(world, i, j, k, entityliving, itemstack);
-        if (world.isRemote) {
-            return;
-        }
     }
 
     @Override

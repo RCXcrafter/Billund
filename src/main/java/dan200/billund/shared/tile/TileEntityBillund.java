@@ -285,6 +285,8 @@ public class TileEntityBillund extends TileEntity {
         return null;
     }
 
+    public boolean globalIllumination;
+
     // Privates
     private Stud[] m_studs;
 
@@ -307,6 +309,7 @@ public class TileEntityBillund extends TileEntity {
                 y >= 0 && y < STUDS_PER_COLUMN &&
                 z >= 0 && z < STUDS_PER_ROW) {
             m_studs[x + (z * STUDS_PER_ROW) + (y * STUDS_PER_LAYER)] = stud;
+            cullOrphans();
         }
     }
 
@@ -320,6 +323,7 @@ public class TileEntityBillund extends TileEntity {
     }
 
     public void cullOrphans() {
+        globalIllumination = false;
         boolean changed = false;
         for (int i = 0; i < STUDS_PER_BLOCK; ++i) {
             Stud stud = m_studs[i];
@@ -328,6 +332,11 @@ public class TileEntityBillund extends TileEntity {
                 if (origin == null) {
                     m_studs[i] = null;
                     changed = true;
+                } else {
+                    if (!globalIllumination && stud.illuminated) {
+                        globalIllumination = true;
+                        changed = true;
+                    }
                 }
             }
         }
@@ -363,6 +372,7 @@ public class TileEntityBillund extends TileEntity {
     public void writeToNBT(NBTTagCompound nbttagcompound) {
         super.writeToNBT(nbttagcompound);
 
+        nbttagcompound.setBoolean("globalIllumination", globalIllumination);
         for (int i = 0; i < STUDS_PER_BLOCK; ++i) {
             Stud stud = m_studs[i];
             if (stud != null) {
@@ -385,6 +395,7 @@ public class TileEntityBillund extends TileEntity {
     public void readFromNBT(NBTTagCompound nbttagcompound) {
         super.readFromNBT(nbttagcompound);
 
+        globalIllumination = nbttagcompound.getBoolean("globalIllumination");
         for (int i = 0; i < STUDS_PER_BLOCK; ++i) {
             String key = "s" + i;
             if (nbttagcompound.hasKey(key)) {
