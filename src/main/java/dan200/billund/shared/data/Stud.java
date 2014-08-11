@@ -10,6 +10,7 @@ public class Stud {
 
     public boolean illuminated;
     public boolean transparent;
+    public boolean smooth;
     public int color;
     public int xOrigin;
     public int yOrigin;
@@ -23,9 +24,10 @@ public class Stud {
     public Stud() {
     }
 
-    public Stud(boolean illuminated, boolean transparent, int color, int xOrigin, int yOrigin, int zOrigin, int width, int height, int depth) {
+    public Stud(boolean illuminated, boolean transparent, boolean smooth, int color, int xOrigin, int yOrigin, int zOrigin, int width, int height, int depth) {
         this.illuminated = illuminated;
         this.transparent = transparent;
+        this.smooth = smooth;
         this.color = color;
         this.xOrigin = xOrigin;
         this.yOrigin = yOrigin;
@@ -36,6 +38,6 @@ public class Stud {
     }
 
     public Stud(Brick brick, int xLocal, int yLocal, int zLocal) {
-        this(brick.illuminated, brick.transparent, brick.color, brick.xOrigin, brick.yOrigin, brick.zOrigin, brick.width, brick.height, brick.depth);
+        this(brick.illuminated, brick.transparent, brick.smooth, brick.color, brick.xOrigin, brick.yOrigin, brick.zOrigin, brick.width, brick.height, brick.depth);
     }
 }

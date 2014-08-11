@@ -49,7 +49,7 @@ public class TileEntityBillund extends TileEntity {
                     return billund.getStudLocal(localX, localY, localZ);
                 }
             } else if (!(block.isAir(world, blockX, blockY, blockZ))) {
-                Stud fake = new Stud(false, false, 0, x, y, z, 1, 1, 1);
+                Stud fake = new Stud(false, false, false, 0, x, y, z, 1, 1, 1);
                 fake.actuallyExists = false;
                 return fake;
             }
@@ -379,6 +379,7 @@ public class TileEntityBillund extends TileEntity {
                 NBTTagCompound studTag = new NBTTagCompound();
                 studTag.setBoolean("i", stud.illuminated);
                 studTag.setBoolean("t", stud.transparent);
+                studTag.setBoolean("s", stud.smooth);
                 studTag.setInteger("c", stud.color);
                 studTag.setInteger("x", stud.xOrigin);
                 studTag.setInteger("y", stud.yOrigin);
@@ -403,6 +404,7 @@ public class TileEntityBillund extends TileEntity {
                 NBTTagCompound studTag = nbttagcompound.getCompoundTag(key);
                 stud.illuminated = studTag.getBoolean("i");
                 stud.transparent = studTag.getBoolean("t");
+                stud.smooth = studTag.getBoolean("s");
                 stud.color = studTag.getInteger("c");
                 stud.xOrigin = studTag.getInteger("x");
                 stud.yOrigin = studTag.getInteger("y");

@@ -33,8 +33,7 @@ public class BrickRenderHelper {
         Tessellator tessellator = Tessellator.instance;
         int brightness = 15;
 
-        boolean illuminated = ItemBrick.getIlluminated(brick);
-        boolean transparent = ItemBrick.getTransparent(brick);
+        boolean smooth = ItemBrick.getSmooth(brick);
         int colour = ItemBrick.getColour(brick);
         int width = ItemBrick.getWidth(brick);
         int height = ItemBrick.getHeight(brick);
@@ -61,7 +60,7 @@ public class BrickRenderHelper {
 
         tessellator.startDrawingQuads();
         tessellator.setNormal(0.0f, -1.0f, 0.0f);
-        renderBrick(null, brightness, illuminated, colour, transparent ? 0.65F : 1.0F, 0, 0, 0, width, height, depth);
+        renderBrick(null, brightness, false, smooth, colour, 1.0F, 0, 0, 0, width, height, depth);
         tessellator.draw();
 
         // Teardown
@@ -82,11 +81,11 @@ public class BrickRenderHelper {
         int brightness = BillundBlocks.billund.getMixedBrightnessForBlock(world, blockX, blockY, blockZ);
 
         tessellator.startDrawingQuads();
-        renderBrick(world, brightness, brick.illuminated, brick.color, 0.65F, brick.xOrigin, brick.yOrigin, brick.zOrigin, brick.width, brick.height, brick.depth);
+        renderBrick(world, brightness, brick.illuminated, brick.smooth, brick.color, 0.65F, brick.xOrigin, brick.yOrigin, brick.zOrigin, brick.width, brick.height, brick.depth);
         tessellator.draw();
     }
 
-    public static void renderBrick(IBlockAccess world, int brightness, boolean illuminated, int colour, float alpha, int sx, int sy, int sz, int width, int height, int depth) {
+    public static void renderBrick(IBlockAccess world, int brightness, boolean illuminated, boolean smooth, int colour, float alpha, int sx, int sy, int sz, int width, int height, int depth) {
         // Draw the brick
         if (world != null && !illuminated) {
             Tessellator tessellator = Tessellator.instance;
@@ -126,6 +125,10 @@ public class BrickRenderHelper {
                     drawStud = (above == null) || (above.transparent);
                 } else {
                     drawStud = true;
+                }
+
+                if (smooth) {
+                    drawStud = false;
                 }
 
                 if (drawStud) {

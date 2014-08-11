@@ -37,16 +37,17 @@ public class ItemBrick extends Item {
     }
 
     public static ItemStack create(int color, int width, int depth, int quantity) {
-        return create(false, false, color, width, depth, quantity);
+        return create(false, false, false, color, width, depth, quantity);
     }
 
-    public static ItemStack create(boolean illuminated, boolean transparent, int colour, int width, int depth, int quantity) {
+    public static ItemStack create(boolean illuminated, boolean transparent, boolean smooth, int colour, int width, int depth, int quantity) {
         int damage = ((width - 1) & 0x1) + (((depth - 1) & 0x7) << 1);
         ItemStack stack = new ItemStack(BillundItems.brick, quantity, damage);
         NBTTagCompound nbt = new NBTTagCompound();
         nbt.setInteger("color", colour);
         nbt.setBoolean("illuminated", illuminated);
         nbt.setBoolean("transparent", transparent);
+        nbt.setBoolean("smooth", smooth);
         stack.setTagCompound(nbt);
         return stack;
     }
@@ -98,6 +99,12 @@ public class ItemBrick extends Item {
         // Do the raycast
         TileEntityBillund.StudRaycastResult result = raycastFromPlayer(world, player, f);
         if (result != null) {
+            // Bricks can't be directly placed on top of smooth bricks (because I'm evil)
+            Stud stud = TileEntityBillund.getStud(world, result.hitX, result.hitY, result.hitZ);
+            if (result.hitSide == 1 && stud.smooth) {
+                return null;
+            }
+
             // Calculate where to place the brick
             int defaultWidth = getWidth(stack);
             int defaultDepth = getDepth(stack);
@@ -153,7 +160,7 @@ public class ItemBrick extends Item {
             }
 
             // Try a few positions nearby
-            Brick brick = new Brick(getIlluminated(stack), getTransparent(stack), getColour(stack), placeX, placeY, placeZ, width, height, depth);
+            Brick brick = new Brick(getIlluminated(stack), getTransparent(stack), getSmooth(stack), getColour(stack), placeX, placeY, placeZ, width, height, depth);
             for (int x = 0; x < width; ++x) {
                 for (int z = 0; z < depth; ++z) {
                     for (int y = 0; y < height; ++y) {
@@ -176,7 +183,7 @@ public class ItemBrick extends Item {
         if (result != null) {
             Stud stud = TileEntityBillund.getStud(world, result.hitX, result.hitY, result.hitZ);
             if (stud != null && stud.actuallyExists) {
-                return new Brick(stud.illuminated, stud.transparent, stud.color, stud.xOrigin, stud.yOrigin, stud.zOrigin, stud.brickWidth, stud.brickHeight, stud.brickDepth);
+                return new Brick(stud.illuminated, stud.transparent, stud.smooth, stud.color, stud.xOrigin, stud.yOrigin, stud.zOrigin, stud.brickWidth, stud.brickHeight, stud.brickDepth);
             }
         }
         return null;
@@ -192,6 +199,10 @@ public class ItemBrick extends Item {
 
         if (getTransparent(stack)) {
             list.add(I18n.format("brick.transparent"));
+        }
+
+        if (getSmooth(stack)) {
+            list.add(I18n.format("brick.smooth"));
         }
     }
 
@@ -236,5 +247,9 @@ public class ItemBrick extends Item {
 
     public static boolean getTransparent(ItemStack stack) {
         return stack.hasTagCompound() ? stack.getTagCompound().getBoolean("transparent") : false;
+    }
+
+    public static boolean getSmooth(ItemStack stack) {
+        return stack.hasTagCompound() ? stack.getTagCompound().getBoolean("smooth") : false;
     }
 }

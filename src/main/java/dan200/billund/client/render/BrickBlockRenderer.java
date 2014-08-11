@@ -40,7 +40,7 @@ public class BrickBlockRenderer extends TileEntitySpecialRenderer {
                             tessellator.startDrawingQuads();
 
                             BrickRenderHelper.renderBrick(
-                                    tile.getWorldObj(), brightness, stud.illuminated, stud.color, stud.transparent ? 0.8F : 1.0F,
+                                    tile.getWorldObj(), brightness, stud.illuminated, stud.smooth, stud.color, stud.transparent ? 0.8F : 1.0F,
                                     sx, sy, sz, stud.brickWidth, stud.brickHeight, stud.brickDepth
                             );
 
@@ -72,7 +72,7 @@ public class BrickBlockRenderer extends TileEntitySpecialRenderer {
                             tessellator.startDrawingQuads();
 
                             BrickRenderHelper.renderBrick(
-                                    tile.getWorldObj(), brightness, stud.illuminated, stud.color, stud.transparent ? 0.8F : 1.0F,
+                                    tile.getWorldObj(), brightness, stud.illuminated, stud.smooth, stud.color, stud.transparent ? 0.8F : 1.0F,
                                     sx, sy, sz, stud.brickWidth, stud.brickHeight, stud.brickDepth
                             );
 

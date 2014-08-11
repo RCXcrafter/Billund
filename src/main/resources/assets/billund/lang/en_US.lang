@@ -3,6 +3,7 @@ itemGroup.billund.name=Billund
 
 brick.illuminated=Illuminated
 brick.transparent=Transparent
+brick.smooth=Smooth
 
 gui.header=Billund Order Form
 gui.order.place=Place Order

@@ -25,7 +25,7 @@ public class RecipeBrick implements IRecipe {
             if (stack != null) {
                 if (stack.getItem() == BillundItems.brick) {
                     bricks++;
-                } else if (stack.getItem() == Items.dye || stack.getItem() == Items.glowstone_dust || Block.getBlockFromItem(stack.getItem()) == Blocks.glass) {
+                } else if (stack.getItem() == Items.dye || stack.getItem() == Items.glowstone_dust || Block.getBlockFromItem(stack.getItem()) == Blocks.glass || Block.getBlockFromItem(stack.getItem()) == Blocks.stone) {
                     components++;
                 }
             }
@@ -40,6 +40,7 @@ public class RecipeBrick implements IRecipe {
         boolean dye = false;
         boolean light = false;
         boolean glass = false;
+        boolean stone = false;
         for (int i=0; i<inv.getSizeInventory(); i++) {
             ItemStack stack = inv.getStackInSlot(i);
             if (stack != null) {
@@ -54,6 +55,9 @@ public class RecipeBrick implements IRecipe {
                 } else if (Block.getBlockFromItem(stack.getItem()) == Blocks.glass) {
                     component = stack.copy();
                     glass = true;
+                } else if (Block.getBlockFromItem(stack.getItem()) == Blocks.stone) {
+                    component = stack.copy();
+                    stone = true;
                 }
             }
         }
@@ -61,6 +65,7 @@ public class RecipeBrick implements IRecipe {
             return ItemBrick.create(
                     ItemBrick.getIlluminated(brick),
                     ItemBrick.getTransparent(brick),
+                    ItemBrick.getSmooth(brick),
                     ItemDye.field_150922_c[component.getItemDamage()],
                     ItemBrick.getWidth(brick),
                     ItemBrick.getDepth(brick),
@@ -70,6 +75,7 @@ public class RecipeBrick implements IRecipe {
             return ItemBrick.create(
                     true,
                     ItemBrick.getTransparent(brick),
+                    ItemBrick.getSmooth(brick),
                     ItemBrick.getColour(brick),
                     ItemBrick.getWidth(brick),
                     ItemBrick.getDepth(brick),
@@ -78,6 +84,17 @@ public class RecipeBrick implements IRecipe {
         } else if (glass) {
             return ItemBrick.create(
                     ItemBrick.getIlluminated(brick),
+                    true,
+                    ItemBrick.getSmooth(brick),
+                    ItemBrick.getColour(brick),
+                    ItemBrick.getWidth(brick),
+                    ItemBrick.getDepth(brick),
+                    1
+            );
+        } else if (stone) {
+            return ItemBrick.create(
+                    ItemBrick.getIlluminated(brick),
+                    ItemBrick.getTransparent(brick),
                     true,
                     ItemBrick.getColour(brick),
                     ItemBrick.getWidth(brick),

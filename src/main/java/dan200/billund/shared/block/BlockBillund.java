@@ -15,7 +15,6 @@ import net.minecraft.block.BlockContainer;
 import net.minecraft.block.material.Material;
 import net.minecraft.client.renderer.texture.IIconRegister;
 import net.minecraft.entity.Entity;
-import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.entity.item.EntityItem;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.ItemDye;
@@ -95,7 +94,7 @@ public class BlockBillund extends BlockContainer {
                         float brickX = ((float) brick.xOrigin + (float) brick.width * 0.5f) / (float) TileEntityBillund.ROWS_PER_BLOCK;
                         float brickY = ((float) brick.yOrigin + (float) brick.height) / (float) TileEntityBillund.LAYERS_PER_BLOCK;
                         float brickZ = ((float) brick.zOrigin + (float) brick.depth * 0.5f) / (float) TileEntityBillund.ROWS_PER_BLOCK;
-                        ItemStack stack = ItemBrick.create(brick.illuminated, brick.transparent, brick.color, Math.min(brick.width, brick.depth), Math.max(brick.width, brick.depth), 1);
+                        ItemStack stack = ItemBrick.create(brick.illuminated, brick.transparent, brick.smooth, brick.color, Math.min(brick.width, brick.depth), Math.max(brick.width, brick.depth), 1);
                         EntityItem entityitem = new EntityItem(world, brickX, brickY + 0.05f, brickZ, stack);
                         entityitem.motionX = 0.0f;
                         entityitem.motionY = 0.0f;
@@ -248,7 +247,7 @@ public class BlockBillund extends BlockContainer {
 
     @Override
     public ItemStack getPickBlock(MovingObjectPosition target, World world, int x, int y, int z) {
-        return ItemBrick.create(s_hoverBrick.illuminated, s_hoverBrick.transparent, s_hoverBrick.color, s_hoverBrick.width, s_hoverBrick.depth, 1);
+        return ItemBrick.create(s_hoverBrick.illuminated, s_hoverBrick.transparent, s_hoverBrick.smooth, s_hoverBrick.color, s_hoverBrick.width, s_hoverBrick.depth, 1);
     }
 
     @Override
@@ -268,7 +267,7 @@ public class BlockBillund extends BlockContainer {
                 ItemStack held = entityplayer.getHeldItem();
 
                 if (held != null && held.getItem() instanceof ItemDye) {
-                    Brick newBrick = new Brick(s_hoverBrick.illuminated, s_hoverBrick.transparent, s_hoverBrick.color, s_hoverBrick.xOrigin, s_hoverBrick.yOrigin, s_hoverBrick.zOrigin, s_hoverBrick.width, s_hoverBrick.height, s_hoverBrick.depth);
+                    Brick newBrick = new Brick(s_hoverBrick.illuminated, s_hoverBrick.transparent, s_hoverBrick.smooth, s_hoverBrick.color, s_hoverBrick.xOrigin, s_hoverBrick.yOrigin, s_hoverBrick.zOrigin, s_hoverBrick.width, s_hoverBrick.height, s_hoverBrick.depth);
                     Color brickColor = new Color(newBrick.color);
                     Color dyeColor = new Color(ItemDye.field_150922_c[held.getItemDamage()]);
                     int br = brickColor.getRed();

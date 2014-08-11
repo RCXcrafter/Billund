@@ -10,6 +10,7 @@ public class Brick {
 
     public boolean illuminated;
     public boolean transparent;
+    public boolean smooth;
     public int color;
     public int xOrigin;
     public int yOrigin;
@@ -18,9 +19,10 @@ public class Brick {
     public int height;
     public int depth;
 
-    public Brick(boolean illuminated, boolean transparent, int color, int xOrigin, int yOrigin, int zOrigin, int width, int height, int depth) {
+    public Brick(boolean illuminated, boolean transparent, boolean smooth, int color, int xOrigin, int yOrigin, int zOrigin, int width, int height, int depth) {
         this.illuminated = illuminated;
         this.transparent = transparent;
+        this.smooth = smooth;
         this.color = color;
         this.xOrigin = xOrigin;
         this.yOrigin = yOrigin;
