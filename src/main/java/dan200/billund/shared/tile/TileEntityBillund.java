@@ -49,8 +49,9 @@ public class TileEntityBillund extends TileEntity {
                     return billund.getStudLocal(localX, localY, localZ);
                 }
             } else if (!(block.isAir(world, blockX, blockY, blockZ))) {
-                int colour = 0;
-                return new Stud(false, false, colour, x, y, z, 1, 1, 1);
+                Stud fake = new Stud(false, false, 0, x, y, z, 1, 1, 1);
+                fake.actuallyExists = false;
+                return fake;
             }
         }
         return null;

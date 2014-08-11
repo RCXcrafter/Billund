@@ -18,6 +18,8 @@ public class Stud {
     public int brickHeight;
     public int brickDepth;
 
+    public boolean actuallyExists = true;
+
     public Stud() {
     }
 

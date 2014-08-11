@@ -175,7 +175,7 @@ public class ItemBrick extends Item {
         TileEntityBillund.StudRaycastResult result = raycastFromPlayer(world, player, f);
         if (result != null) {
             Stud stud = TileEntityBillund.getStud(world, result.hitX, result.hitY, result.hitZ);
-            if (stud != null) {
+            if (stud != null && stud.actuallyExists) {
                 return new Brick(stud.illuminated, stud.transparent, stud.color, stud.xOrigin, stud.yOrigin, stud.zOrigin, stud.brickWidth, stud.brickHeight, stud.brickDepth);
             }
         }
@@ -184,6 +184,8 @@ public class ItemBrick extends Item {
 
     @Override
     public void addInformation(ItemStack stack, EntityPlayer player, List list, boolean debug) {
+        list.add(getWidth(stack) + "x" + getDepth(stack));
+
         if (getIlluminated(stack)) {
             list.add(I18n.format("brick.illuminated"));
         }
@@ -191,26 +193,6 @@ public class ItemBrick extends Item {
         if (getTransparent(stack)) {
             list.add(I18n.format("brick.transparent"));
         }
-    }
-
-    @Override
-    public boolean onItemUseFirst(ItemStack stack, EntityPlayer player, World world, int x, int y, int z, int side, float hitX, float hitY, float hitZ) {
-//    	Brick brick = getPotentialBrick( stack, world, player, 1.0f );
-//    	if( brick != null )
-//		{
-//			return true;
-//		}
-        return false;
-    }
-
-    @Override
-    public boolean onItemUse(ItemStack stack, EntityPlayer player, World world, int x, int y, int z, int side, float hitX, float hitY, float hitZ) {
-//    	Brick brick = getPotentialBrick( stack, world, player, 1.0f );
-//    	if( brick != null )
-//		{
-//			return true;
-//		}
-        return false;
     }
 
     @Override
