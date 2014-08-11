@@ -21,9 +21,9 @@ public class GuiOrderForm extends GuiScreen {
     private static final ResourceLocation background = new ResourceLocation("billund", "textures/gui/orderform.png");
 
     private static final int xSize = 192;
-    private static final int ySize = 185;
+    private static final int ySize = 215;
 
-    private static final int NUM_SETS = 5;
+    private static final int NUM_SETS = 6;
 
     private EntityPlayer m_player;
     private boolean[] m_orders;
@@ -92,7 +92,7 @@ public class GuiOrderForm extends GuiScreen {
             }
 
             // Test order button
-            if (localX >= 102 && localX < 177 && localY >= 149 && localY < 170) {
+            if (localX >= 102 && localX < 177 && localY >= 173 && localY < 193) {
                 if (canPlayerOrder()) {
                     order();
                 }
@@ -134,7 +134,7 @@ public class GuiOrderForm extends GuiScreen {
 
         String order = m_ordered ? I18n.format("gui.order.placed") : I18n.format("gui.order.place");
         int colour = canPlayerOrder() ? 0x4c5156 : 0xb3a8a7;
-        fontRendererObj.drawString(order, startX + 102 + (75 - fontRendererObj.getStringWidth(order)) / 2, startY + 156, colour);
+        fontRendererObj.drawString(order, startX + 102 + (75 - fontRendererObj.getStringWidth(order)) / 2, startY + 180, colour);
 
         super.drawScreen(mouseX, mouseY, f);
     }

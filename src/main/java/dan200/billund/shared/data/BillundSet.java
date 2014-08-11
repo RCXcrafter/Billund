@@ -10,6 +10,8 @@ import dan200.billund.shared.item.ItemBrick;
 import net.minecraft.inventory.IInventory;
 import net.minecraft.item.ItemStack;
 
+import java.util.Random;
+
 public class BillundSet {
 
     public static BillundSet get(int index) {
@@ -22,6 +24,7 @@ public class BillundSet {
             "pack.colorB",
             "pack.colorC",
             "pack.colorD",
+            "pack.random",
     };
 
     private static int[] s_setCosts = new int[]{
@@ -29,7 +32,8 @@ public class BillundSet {
             10,
             10,
             10,
-            10
+            10,
+            15
     };
 
     private int m_index;
@@ -97,6 +101,11 @@ public class BillundSet {
                 addAll(Color.BLACK);
                 break;
             }
+            case 5: {
+                for (int i=0; i<27; i++) {
+                    addRandom();
+                }
+            }
         }
     }
 
@@ -124,5 +133,18 @@ public class BillundSet {
         add(ItemBrick.create(colour.getRGB(), 2, 3, 24));
         add(ItemBrick.create(colour.getRGB(), 2, 4, 24));
         add(ItemBrick.create(colour.getRGB(), 2, 6, 24));
+    }
+
+    private void addRandom() {
+        Random random = new Random();
+        add(ItemBrick.create(
+                random.nextBoolean(),
+                random.nextBoolean(),
+                random.nextBoolean(),
+                Color.values()[random.nextInt(Color.values().length)].getRGB(),
+                random.nextInt(2) + 1,
+                random.nextInt(6) + 1,
+                24
+        ));
     }
 }

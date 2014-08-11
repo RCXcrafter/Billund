@@ -15,6 +15,7 @@ pack.colorA=Color Pack A
 pack.colorB=Color Pack B
 pack.colorC=Color Pack C
 pack.colorD=Color Pack D
+pack.random=Blind Bag
 
 # Item
 item.brick.name=Brick

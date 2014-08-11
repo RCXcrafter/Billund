@@ -100,19 +100,21 @@ public class EntityAirDrop extends Entity {
                 this.motionZ *= 0.7;
                 this.motionY *= -0.5;
 
-                if (this.worldObj.getBlock(blockX, blockY, blockZ) != Blocks.piston_extension) {
-                    this.setDead();
+                while (!worldObj.isAirBlock(blockX, blockY, blockZ)) {
+                    blockY++;
+                }
 
-                    // Set the block
-                    this.worldObj.setBlock(blockX, blockY, blockZ, Block.getBlockById(this.blockID), this.metadata, 3);
+                this.setDead();
 
-                    // Populate the block
-                    TileEntity entity = this.worldObj.getTileEntity(blockX, blockY, blockZ);
-                    if (entity != null && entity instanceof IInventory) {
-                        IInventory inv = (IInventory) entity;
-                        BillundSet.get(this.setType).populateChest(inv);
-                        inv.markDirty();
-                    }
+                // Set the block
+                this.worldObj.setBlock(blockX, blockY, blockZ, Block.getBlockById(this.blockID), this.metadata, 3);
+
+                // Populate the block
+                TileEntity entity = this.worldObj.getTileEntity(blockX, blockY, blockZ);
+                if (entity != null && entity instanceof IInventory) {
+                    IInventory inv = (IInventory) entity;
+                    BillundSet.get(this.setType).populateChest(inv);
+                    inv.markDirty();
                 }
             } else if (blockY < 0) {
                 this.setDead();
