@@ -10,10 +10,9 @@ import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.SidedProxy;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 import dan200.billund.shared.core.BillundProxyCommon;
-import dan200.billund.shared.core.BuildInfo;
 import net.minecraft.creativetab.CreativeTabs;
 
-@Mod(modid = "Billund", name = BuildInfo.ModName, version = BuildInfo.Version)
+@Mod(modid = "Billund", name = "Billund", version = "%MOD_VERSION%")
 public class Billund {
 
     public static CreativeTabs creativeTab;
