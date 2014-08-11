@@ -8,6 +8,7 @@ package dan200.billund.shared.data;
 
 public class Stud {
 
+    public boolean Illuminated;
     public int Colour;
     public int XOrigin;
     public int YOrigin;
@@ -19,7 +20,8 @@ public class Stud {
     public Stud() {
     }
 
-    public Stud(int colour, int xOrigin, int yOrigin, int zOrigin, int width, int height, int depth) {
+    public Stud(boolean illuminated, int colour, int xOrigin, int yOrigin, int zOrigin, int width, int height, int depth) {
+        Illuminated = illuminated;
         Colour = colour;
         XOrigin = xOrigin;
         YOrigin = yOrigin;
@@ -30,6 +32,6 @@ public class Stud {
     }
 
     public Stud(Brick brick, int xLocal, int yLocal, int zLocal) {
-        this(brick.Colour, brick.XOrigin, brick.YOrigin, brick.ZOrigin, brick.Width, brick.Height, brick.Depth);
+        this(brick.Illuminated, brick.Colour, brick.XOrigin, brick.YOrigin, brick.ZOrigin, brick.Width, brick.Height, brick.Depth);
     }
 }

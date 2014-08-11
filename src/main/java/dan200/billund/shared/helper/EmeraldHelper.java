@@ -10,6 +10,10 @@ import net.minecraft.item.ItemStack;
 public class EmeraldHelper {
 
     public static int getPlayerBalance(EntityPlayer player) {
+        if (player.capabilities.isCreativeMode) {
+            return 64;
+        }
+
         int total = 0;
         for (int i = 0; i < player.inventory.getSizeInventory(); ++i) {
             ItemStack stack = player.inventory.getStackInSlot(i);

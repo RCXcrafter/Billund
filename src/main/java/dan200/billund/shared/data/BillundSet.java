@@ -113,21 +113,21 @@ public class BillundSet {
     }
 
     private void addBasic(int colour) {
-        add(ItemBrick.create(colour, 1, 2, 24));
-        add(ItemBrick.create(colour, 1, 4, 24));
-        add(ItemBrick.create(colour, 2, 2, 24));
-        add(ItemBrick.create(colour, 2, 4, 24));
+        add(ItemBrick.create(false, colour, 1, 2, 24));
+        add(ItemBrick.create(false, colour, 1, 4, 24));
+        add(ItemBrick.create(false, colour, 2, 2, 24));
+        add(ItemBrick.create(false, colour, 2, 4, 24));
     }
 
     private void addAll(int colour) {
-        add(ItemBrick.create(colour, 1, 1, 24));
-        add(ItemBrick.create(colour, 1, 2, 24));
-        add(ItemBrick.create(colour, 1, 3, 24));
-        add(ItemBrick.create(colour, 1, 4, 24));
-        add(ItemBrick.create(colour, 1, 6, 24));
-        add(ItemBrick.create(colour, 2, 2, 24));
-        add(ItemBrick.create(colour, 2, 3, 24));
-        add(ItemBrick.create(colour, 2, 4, 24));
-        add(ItemBrick.create(colour, 2, 6, 24));
+        add(ItemBrick.create(false, colour, 1, 1, 24));
+        add(ItemBrick.create(false, colour, 1, 2, 24));
+        add(ItemBrick.create(false, colour, 1, 3, 24));
+        add(ItemBrick.create(false, colour, 1, 4, 24));
+        add(ItemBrick.create(false, colour, 1, 6, 24));
+        add(ItemBrick.create(false, colour, 2, 2, 24));
+        add(ItemBrick.create(false, colour, 2, 3, 24));
+        add(ItemBrick.create(false, colour, 2, 4, 24));
+        add(ItemBrick.create(false, colour, 2, 6, 24));
     }
 }

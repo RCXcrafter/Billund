@@ -51,7 +51,7 @@ public class TileEntityBillund extends TileEntity {
                 }
             } else if (!(block.isAir(world, blockX, blockY, blockZ))) {
                 int colour = block.isOpaqueCube() ? StudColour.Wall : StudColour.TranslucentWall;
-                return new Stud(colour, x, y, z, 1, 1, 1);
+                return new Stud(false, colour, x, y, z, 1, 1, 1);
             }
         }
         return null;
@@ -367,6 +367,7 @@ public class TileEntityBillund extends TileEntity {
             Stud stud = m_studs[i];
             if (stud != null) {
                 NBTTagCompound studTag = new NBTTagCompound();
+                studTag.setBoolean("i", stud.Illuminated);
                 studTag.setInteger("c", stud.Colour);
                 studTag.setInteger("x", stud.XOrigin);
                 studTag.setInteger("y", stud.YOrigin);
@@ -388,6 +389,7 @@ public class TileEntityBillund extends TileEntity {
             if (nbttagcompound.hasKey(key)) {
                 Stud stud = new Stud();
                 NBTTagCompound studTag = nbttagcompound.getCompoundTag(key);
+                stud.Illuminated = studTag.getBoolean("i");
                 stud.Colour = studTag.getInteger("c");
                 stud.XOrigin = studTag.getInteger("x");
                 stud.YOrigin = studTag.getInteger("y");

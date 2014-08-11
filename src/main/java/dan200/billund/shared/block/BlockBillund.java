@@ -94,7 +94,7 @@ public class BlockBillund extends BlockContainer {
                         float brickX = ((float) brick.XOrigin + (float) brick.Width * 0.5f) / (float) TileEntityBillund.ROWS_PER_BLOCK;
                         float brickY = ((float) brick.YOrigin + (float) brick.Height) / (float) TileEntityBillund.LAYERS_PER_BLOCK;
                         float brickZ = ((float) brick.ZOrigin + (float) brick.Depth * 0.5f) / (float) TileEntityBillund.ROWS_PER_BLOCK;
-                        ItemStack stack = ItemBrick.create(brick.Colour, Math.min(brick.Width, brick.Depth), Math.max(brick.Width, brick.Depth), 1);
+                        ItemStack stack = ItemBrick.create(brick.Illuminated, brick.Colour, Math.min(brick.Width, brick.Depth), Math.max(brick.Width, brick.Depth), 1);
                         EntityItem entityitem = new EntityItem(world, brickX, brickY + 0.05f, brickZ, stack);
                         entityitem.motionX = 0.0f;
                         entityitem.motionY = 0.0f;
@@ -265,7 +265,7 @@ public class BlockBillund extends BlockContainer {
                 ItemStack held = entityplayer.getHeldItem();
 
                 if (held != null && held.getItem() instanceof ItemDye) {
-                    Brick newBrick = new Brick(s_hoverBrick.Colour, s_hoverBrick.XOrigin, s_hoverBrick.YOrigin, s_hoverBrick.ZOrigin, s_hoverBrick.Width, s_hoverBrick.Height, s_hoverBrick.Depth);
+                    Brick newBrick = new Brick(s_hoverBrick.Illuminated, s_hoverBrick.Colour, s_hoverBrick.XOrigin, s_hoverBrick.YOrigin, s_hoverBrick.ZOrigin, s_hoverBrick.Width, s_hoverBrick.Height, s_hoverBrick.Depth);
                     Color brickColor = new Color(newBrick.Colour);
                     Color dyeColor = new Color(ItemDye.field_150922_c[held.getItemDamage()]);
                     int br = brickColor.getRed();

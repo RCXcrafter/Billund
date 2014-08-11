@@ -34,6 +34,7 @@ public class BrickRenderHelper {
         Tessellator tessellator = Tessellator.instance;
         int brightness = 15;
 
+        boolean illuminated = ItemBrick.getIlluminated(brick);
         int colour = ItemBrick.getColour(brick);
         int width = ItemBrick.getWidth(brick);
         int height = ItemBrick.getHeight(brick);
@@ -60,7 +61,7 @@ public class BrickRenderHelper {
 
         tessellator.startDrawingQuads();
         tessellator.setNormal(0.0f, -1.0f, 0.0f);
-        renderBrick(null, brightness, colour, 1.0F, 0, 0, 0, width, height, depth);
+        renderBrick(null, brightness, illuminated, colour, 1.0F, 0, 0, 0, width, height, depth);
         tessellator.draw();
 
         // Teardown
@@ -81,13 +82,13 @@ public class BrickRenderHelper {
         int brightness = BillundBlocks.billund.getMixedBrightnessForBlock(world, blockX, blockY, blockZ);
 
         tessellator.startDrawingQuads();
-        renderBrick(world, brightness, brick.Colour, 0.65F, brick.XOrigin, brick.YOrigin, brick.ZOrigin, brick.Width, brick.Height, brick.Depth);
+        renderBrick(world, brightness, brick.Illuminated, brick.Colour, 0.65F, brick.XOrigin, brick.YOrigin, brick.ZOrigin, brick.Width, brick.Height, brick.Depth);
         tessellator.draw();
     }
 
-    public static void renderBrick(IBlockAccess world, int brightness, int colour, float alpha, int sx, int sy, int sz, int width, int height, int depth) {
+    public static void renderBrick(IBlockAccess world, int brightness, boolean illuminated, int colour, float alpha, int sx, int sy, int sz, int width, int height, int depth) {
         // Draw the brick
-        if (world != null) {
+        if (world != null && !illuminated) {
             Tessellator tessellator = Tessellator.instance;
             tessellator.setBrightness(brightness);
         }

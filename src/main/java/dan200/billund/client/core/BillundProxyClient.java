@@ -8,6 +8,7 @@ package dan200.billund.client.core;
 
 import cpw.mods.fml.client.registry.ClientRegistry;
 import cpw.mods.fml.client.registry.RenderingRegistry;
+import dan200.billund.client.handler.ClientTickHandler;
 import dan200.billund.client.handler.RenderEventHandler;
 import dan200.billund.client.render.BrickBlockRenderer;
 import dan200.billund.client.render.BrickItemRenderer;
@@ -24,6 +25,8 @@ public class BillundProxyClient extends BillundProxyCommon {
     @Override
     public void preInit() {
         super.preInit();
+
+        ClientRegistry.registerKeyBinding(ClientTickHandler.KEY_ROTATE);
 
         MinecraftForge.EVENT_BUS.register(new RenderEventHandler());
         ClientRegistry.bindTileEntitySpecialRenderer(TileEntityBillund.class, new BrickBlockRenderer());

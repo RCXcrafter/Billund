@@ -36,11 +36,12 @@ public class ItemBrick extends Item {
         setCreativeTab(Billund.getCreativeTab());
     }
 
-    public static ItemStack create(int colour, int width, int depth, int quantity) {
+    public static ItemStack create(boolean illuminated, int colour, int width, int depth, int quantity) {
         int damage = ((width - 1) & 0x1) + (((depth - 1) & 0x7) << 1);
         ItemStack stack = new ItemStack(BillundItems.brick, quantity, damage);
         NBTTagCompound nbt = new NBTTagCompound();
         nbt.setInteger("color", colour);
+        nbt.setBoolean("illuminated", illuminated);
         stack.setTagCompound(nbt);
         return stack;
     }
@@ -49,15 +50,15 @@ public class ItemBrick extends Item {
     public void getSubItems(Item item, CreativeTabs tabs, List list) {
         for (int i = 0; i < ItemDye.field_150922_c.length; i++) {
             int colour = ItemDye.field_150922_c[i];
-            list.add(create(colour, 1, 1, 1));
-            list.add(create(colour, 1, 2, 1));
-            list.add(create(colour, 1, 3, 1));
-            list.add(create(colour, 1, 4, 1));
-            list.add(create(colour, 1, 6, 1));
-            list.add(create(colour, 2, 2, 1));
-            list.add(create(colour, 2, 3, 1));
-            list.add(create(colour, 2, 4, 1));
-            list.add(create(colour, 2, 6, 1));
+            list.add(create(false, colour, 1, 1, 1));
+            list.add(create(false, colour, 1, 2, 1));
+            list.add(create(false, colour, 1, 3, 1));
+            list.add(create(false, colour, 1, 4, 1));
+            list.add(create(false, colour, 1, 6, 1));
+            list.add(create(false, colour, 2, 2, 1));
+            list.add(create(false, colour, 2, 3, 1));
+            list.add(create(false, colour, 2, 4, 1));
+            list.add(create(false, colour, 2, 6, 1));
         }
     }
 
@@ -147,7 +148,7 @@ public class ItemBrick extends Item {
             }
 
             // Try a few positions nearby
-            Brick brick = new Brick(getColour(stack), placeX, placeY, placeZ, width, height, depth);
+            Brick brick = new Brick(getIlluminated(stack), getColour(stack), placeX, placeY, placeZ, width, height, depth);
             for (int x = 0; x < width; ++x) {
                 for (int z = 0; z < depth; ++z) {
                     for (int y = 0; y < height; ++y) {
@@ -170,10 +171,17 @@ public class ItemBrick extends Item {
         if (result != null) {
             Stud stud = TileEntityBillund.getStud(world, result.hitX, result.hitY, result.hitZ);
             if (stud != null && stud.Colour != StudColour.Wall) {
-                return new Brick(stud.Colour, stud.XOrigin, stud.YOrigin, stud.ZOrigin, stud.BrickWidth, stud.BrickHeight, stud.BrickDepth);
+                return new Brick(stud.Illuminated, stud.Colour, stud.XOrigin, stud.YOrigin, stud.ZOrigin, stud.BrickWidth, stud.BrickHeight, stud.BrickDepth);
             }
         }
         return null;
+    }
+
+    @Override
+    public void addInformation(ItemStack stack, EntityPlayer player, List list, boolean debug) {
+        if (getIlluminated(stack)) {
+            list.add("Illuminated");
+        }
     }
 
     @Override
@@ -229,5 +237,9 @@ public class ItemBrick extends Item {
 
     public static int getColour(ItemStack stack) {
         return stack.hasTagCompound() ? stack.getTagCompound().getInteger("color") : 0;
+    }
+
+    public static boolean getIlluminated(ItemStack stack) {
+        return stack.hasTagCompound() ? stack.getTagCompound().getBoolean("illuminated") : false;
     }
 }

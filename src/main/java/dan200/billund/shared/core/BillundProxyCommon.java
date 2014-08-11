@@ -6,7 +6,6 @@
 
 package dan200.billund.shared.core;
 
-import cpw.mods.fml.client.registry.ClientRegistry;
 import cpw.mods.fml.common.FMLCommonHandler;
 import cpw.mods.fml.common.network.NetworkRegistry;
 import cpw.mods.fml.common.registry.EntityRegistry;
@@ -22,6 +21,7 @@ import dan200.billund.shared.item.BillundItems;
 import dan200.billund.shared.item.ItemBrick;
 import dan200.billund.shared.item.ItemOrderForm;
 import dan200.billund.shared.network.PacketHandler;
+import dan200.billund.shared.recipe.RecipeBrick;
 import dan200.billund.shared.tile.TileEntityBillund;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraftforge.common.MinecraftForge;
@@ -47,7 +47,7 @@ public class BillundProxyCommon {
         BillundItems.orderForm = new ItemOrderForm();
         GameRegistry.registerItem(BillundItems.orderForm, "order_form");
 
-        ClientRegistry.registerKeyBinding(ClientTickHandler.KEY_ROTATE);
+        GameRegistry.addRecipe(new RecipeBrick());
 
         MinecraftForge.EVENT_BUS.register(new EntityEventHandler());
         FMLCommonHandler.instance().bus().register(new EntityEventHandler());

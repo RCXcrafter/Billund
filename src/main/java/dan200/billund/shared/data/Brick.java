@@ -8,6 +8,7 @@ package dan200.billund.shared.data;
 
 public class Brick {
 
+    public boolean Illuminated;
     public int Colour;
     public int XOrigin;
     public int YOrigin;
@@ -16,7 +17,8 @@ public class Brick {
     public int Height;
     public int Depth;
 
-    public Brick(int colour, int xOrigin, int yOrigin, int zOrigin, int width, int height, int depth) {
+    public Brick(boolean illuminated, int colour, int xOrigin, int yOrigin, int zOrigin, int width, int height, int depth) {
+        Illuminated = illuminated;
         Colour = colour;
         XOrigin = xOrigin;
         YOrigin = yOrigin;
