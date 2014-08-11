@@ -27,13 +27,8 @@ public class ItemOrderForm extends Item {
 
         setMaxStackSize(1);
         setHasSubtypes(true);
-        setUnlocalizedName("billform");
-        setCreativeTab(Billund.getCreativeTab());
-    }
-
-    public static ItemStack create(int colour, int width, int depth, int quantity) {
-        int damage = ((width - 1) & 0x1) + (((depth - 1) & 0x7) << 1) + ((colour & 0xf) << 4);
-        return new ItemStack(BillundItems.brick, quantity, damage);
+        setUnlocalizedName("order_form");
+        setCreativeTab(Billund.TAB);
     }
 
     @Override

@@ -11,6 +11,7 @@ import dan200.billund.shared.core.BillundProxyCommon;
 import dan200.billund.shared.data.Brick;
 import dan200.billund.shared.data.Stud;
 import dan200.billund.shared.tile.TileEntityBillund;
+import net.minecraft.client.resources.I18n;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.entity.player.EntityPlayerMP;
@@ -31,8 +32,8 @@ public class ItemBrick extends Item {
 
         setMaxStackSize(64);
         setHasSubtypes(true);
-        setUnlocalizedName("billbrick");
-        setCreativeTab(Billund.getCreativeTab());
+        setUnlocalizedName("brick");
+        setCreativeTab(Billund.TAB);
     }
 
     public static ItemStack create(int color, int width, int depth, int quantity) {
@@ -184,11 +185,11 @@ public class ItemBrick extends Item {
     @Override
     public void addInformation(ItemStack stack, EntityPlayer player, List list, boolean debug) {
         if (getIlluminated(stack)) {
-            list.add("illuminated");
+            list.add(I18n.format("brick.illuminated"));
         }
 
         if (getTransparent(stack)) {
-            list.add("Transparent");
+            list.add(I18n.format("brick.transparent"));
         }
     }
 

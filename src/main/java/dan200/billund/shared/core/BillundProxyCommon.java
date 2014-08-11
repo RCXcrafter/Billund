@@ -23,7 +23,6 @@ import dan200.billund.shared.item.ItemOrderForm;
 import dan200.billund.shared.network.PacketHandler;
 import dan200.billund.shared.recipe.RecipeBrick;
 import dan200.billund.shared.tile.TileEntityBillund;
-import net.minecraft.creativetab.CreativeTabs;
 import net.minecraftforge.common.MinecraftForge;
 
 public class BillundProxyCommon {
@@ -31,19 +30,13 @@ public class BillundProxyCommon {
     public static int rotate = 0;
 
     public void preInit() {
-        // Register our own creative tab
-        Billund.creativeTab = new CreativeTabBillund(CreativeTabs.getNextID(), "Billund");
-
-        // Billund block
         BillundBlocks.billund = new BlockBillund();
         GameRegistry.registerBlock(BillundBlocks.billund, "Billund");
         GameRegistry.registerTileEntity(TileEntityBillund.class, "billund");
 
-        // Brick item
         BillundItems.brick = new ItemBrick();
         GameRegistry.registerItem(BillundItems.brick, "brick");
 
-        // Order form item
         BillundItems.orderForm = new ItemOrderForm();
         GameRegistry.registerItem(BillundItems.orderForm, "order_form");
 

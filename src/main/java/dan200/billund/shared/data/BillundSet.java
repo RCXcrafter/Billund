@@ -17,11 +17,11 @@ public class BillundSet {
     }
 
     private static String[] s_setNames = new String[]{
-            "Starter Pack",
-            "Color Pack A",
-            "Color Pack B",
-            "Color Pack C",
-            "Color Pack D",
+            "pack.starter",
+            "pack.colorA",
+            "pack.colorB",
+            "pack.colorC",
+            "pack.colorD",
     };
 
     private static int[] s_setCosts = new int[]{

@@ -11,6 +11,7 @@ import dan200.billund.shared.helper.EmeraldHelper;
 import dan200.billund.shared.network.PacketHandler;
 import dan200.billund.shared.network.message.MessageOrder;
 import net.minecraft.client.gui.GuiScreen;
+import net.minecraft.client.resources.I18n;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.util.ResourceLocation;
 import org.lwjgl.opengl.GL11;
@@ -121,17 +122,17 @@ public class GuiOrderForm extends GuiScreen {
         }
 
         // Draw the text
-        fontRendererObj.drawString("Billund Order Form", startX + 8, startY + 10, 0x4c5156);
+        fontRendererObj.drawString(I18n.format("gui.header"), startX + 8, startY + 10, 0x4c5156);
 
         String currency = EmeraldHelper.getPlayerBalance(m_player) + " / " + getOrderCost();
         int currencyColour = canPlayerAffordOrder() ? 0x4c5156 : 0xae1e22;
         fontRendererObj.drawString(currency, startX + xSize - 25 - fontRendererObj.getStringWidth(currency), startY + 10, currencyColour);
 
         for (int i = 0; i < NUM_SETS; ++i) {
-            fontRendererObj.drawString(getSetName(i), startX + 16, startY + 38 + i * 23, 0x4c5156);
+            fontRendererObj.drawString(I18n.format(getSetName(i)), startX + 16, startY + 38 + i * 23, 0x4c5156);
         }
 
-        String order = m_ordered ? "Placed" : "Place Order";
+        String order = m_ordered ? I18n.format("gui.order.placed") : I18n.format("gui.order.place");
         int colour = canPlayerOrder() ? 0x4c5156 : 0xb3a8a7;
         fontRendererObj.drawString(order, startX + 102 + (75 - fontRendererObj.getStringWidth(order)) / 2, startY + 156, colour);
 

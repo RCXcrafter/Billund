@@ -1,0 +1,20 @@
+# Misc
+itemGroup.billund.name=Billund
+
+brick.illuminated=Illuminated
+brick.transparent=Transparent
+
+gui.header=Billund Order Form
+gui.order.place=Place Order
+gui.order.placed=Placed
+
+# Pack
+pack.starter=Starter Pack
+pack.colorA=Color Pack A
+pack.colorB=Color Pack B
+pack.colorC=Color Pack C
+pack.colorD=Color Pack D
+
+# Item
+item.brick.name=Brick
+item.order_form.name=Order Form
