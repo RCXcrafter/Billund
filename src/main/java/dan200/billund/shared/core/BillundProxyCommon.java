@@ -13,10 +13,12 @@ import cpw.mods.fml.common.registry.EntityRegistry;
 import cpw.mods.fml.common.registry.GameRegistry;
 import dan200.billund.Billund;
 import dan200.billund.client.handler.ClientTickHandler;
+import dan200.billund.shared.block.BillundBlocks;
 import dan200.billund.shared.block.BlockBillund;
 import dan200.billund.shared.entity.EntityAirDrop;
 import dan200.billund.shared.handler.EntityEventHandler;
 import dan200.billund.shared.handler.GuiHandler;
+import dan200.billund.shared.item.BillundItems;
 import dan200.billund.shared.item.ItemBrick;
 import dan200.billund.shared.item.ItemOrderForm;
 import dan200.billund.shared.network.PacketHandler;
@@ -26,22 +28,24 @@ import net.minecraftforge.common.MinecraftForge;
 
 public class BillundProxyCommon {
 
+    public static int rotate = 0;
+
     public void preInit() {
         // Register our own creative tab
         Billund.creativeTab = new CreativeTabBillund(CreativeTabs.getNextID(), "Billund");
 
         // Billund block
-        Billund.BillundBlocks.billund = new BlockBillund();
-        GameRegistry.registerBlock(Billund.BillundBlocks.billund, "Billund");
+        BillundBlocks.billund = new BlockBillund();
+        GameRegistry.registerBlock(BillundBlocks.billund, "Billund");
         GameRegistry.registerTileEntity(TileEntityBillund.class, "billund");
 
         // Brick item
-        Billund.BillundItems.brick = new ItemBrick();
-        GameRegistry.registerItem(Billund.BillundItems.brick, "Brick");
+        BillundItems.brick = new ItemBrick();
+        GameRegistry.registerItem(BillundItems.brick, "brick");
 
         // Order form item
-        Billund.BillundItems.orderForm = new ItemOrderForm();
-        GameRegistry.registerItem(Billund.BillundItems.orderForm, "OrderForm");
+        BillundItems.orderForm = new ItemOrderForm();
+        GameRegistry.registerItem(BillundItems.orderForm, "order_form");
 
         ClientRegistry.registerKeyBinding(ClientTickHandler.KEY_ROTATE);
 
@@ -52,6 +56,6 @@ public class BillundProxyCommon {
         NetworkRegistry.INSTANCE.registerGuiHandler(Billund.instance, new GuiHandler());
         PacketHandler.initialize();
 
-        EntityRegistry.registerModEntity(EntityAirDrop.class, "AirDrop", 1, Billund.instance, 80, 3, true);
+        EntityRegistry.registerModEntity(EntityAirDrop.class, "air_drop", 1, Billund.instance, 80, 3, true);
     }
 }

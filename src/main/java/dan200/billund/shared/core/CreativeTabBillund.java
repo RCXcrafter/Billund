@@ -6,7 +6,7 @@
 
 package dan200.billund.shared.core;
 
-import dan200.billund.Billund;
+import dan200.billund.shared.item.BillundItems;
 import dan200.billund.shared.item.ItemBrick;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
@@ -20,7 +20,7 @@ public class CreativeTabBillund extends CreativeTabs {
 
     @Override
     public Item getTabIconItem() {
-        return Billund.BillundItems.brick;
+        return BillundItems.brick;
     }
 
     @Override

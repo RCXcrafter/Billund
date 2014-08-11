@@ -27,6 +27,7 @@ import net.minecraft.world.IBlockAccess;
 import net.minecraft.world.World;
 import net.minecraftforge.common.util.ForgeDirection;
 
+import java.awt.*;
 import java.util.List;
 import java.util.Random;
 
@@ -264,7 +265,19 @@ public class BlockBillund extends BlockContainer {
                 ItemStack held = entityplayer.getHeldItem();
 
                 if (held != null && held.getItem() instanceof ItemDye) {
-                    Brick newBrick = new Brick(ItemDye.field_150922_c[held.getItemDamage()], s_hoverBrick.XOrigin, s_hoverBrick.YOrigin, s_hoverBrick.ZOrigin, s_hoverBrick.Width, s_hoverBrick.Height, s_hoverBrick.Depth);
+                    Brick newBrick = new Brick(s_hoverBrick.Colour, s_hoverBrick.XOrigin, s_hoverBrick.YOrigin, s_hoverBrick.ZOrigin, s_hoverBrick.Width, s_hoverBrick.Height, s_hoverBrick.Depth);
+                    Color brickColor = new Color(newBrick.Colour);
+                    Color dyeColor = new Color(ItemDye.field_150922_c[held.getItemDamage()]);
+                    int br = brickColor.getRed();
+                    int bg = brickColor.getGreen();
+                    int bb = brickColor.getBlue();
+                    int dr = dyeColor.getRed();
+                    int dg = dyeColor.getGreen();
+                    int db = dyeColor.getBlue();
+                    int ar = (br + dr) / 2;
+                    int ag = (bg + dg) / 2;
+                    int ab = (bb + db) / 2;
+                    newBrick.Colour = new Color(ar, ag, ab).getRGB();
                     TileEntityBillund.addBrick(world, newBrick);
                 }
             }

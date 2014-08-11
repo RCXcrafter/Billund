@@ -33,12 +33,12 @@ public class ItemOrderForm extends Item {
 
     public static ItemStack create(int colour, int width, int depth, int quantity) {
         int damage = ((width - 1) & 0x1) + (((depth - 1) & 0x7) << 1) + ((colour & 0xf) << 4);
-        return new ItemStack(Billund.BillundItems.brick, quantity, damage);
+        return new ItemStack(BillundItems.brick, quantity, damage);
     }
 
     @Override
     public void getSubItems(Item item, CreativeTabs tabs, List list) {
-        list.add(new ItemStack(Billund.BillundItems.orderForm, 1, 0));
+        list.add(new ItemStack(BillundItems.orderForm, 1, 0));
     }
 
     @Override

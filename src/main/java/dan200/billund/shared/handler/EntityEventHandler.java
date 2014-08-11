@@ -2,9 +2,9 @@ package dan200.billund.shared.handler;
 
 import cpw.mods.fml.common.eventhandler.SubscribeEvent;
 import cpw.mods.fml.common.gameevent.TickEvent;
-import dan200.billund.Billund;
 import dan200.billund.shared.block.BlockBillund;
 import dan200.billund.shared.data.Brick;
+import dan200.billund.shared.item.BillundItems;
 import dan200.billund.shared.item.ItemBrick;
 import net.minecraft.client.Minecraft;
 import net.minecraft.entity.EntityLivingBase;
@@ -47,7 +47,7 @@ public class EntityEventHandler {
             Random r = new Random();
             EntityLivingBase living = (EntityLivingBase) event.entity;
             if ((living.isChild() && r.nextInt(20) == 0) || (!living.isChild() && r.nextInt(100) == 0)) {
-                event.entity.entityDropItem(new ItemStack(Billund.BillundItems.orderForm, 1), 0.0f);
+                event.entity.entityDropItem(new ItemStack(BillundItems.orderForm, 1), 0.0f);
             }
         }
     }

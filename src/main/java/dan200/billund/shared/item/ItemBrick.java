@@ -7,7 +7,7 @@
 package dan200.billund.shared.item;
 
 import dan200.billund.Billund;
-import dan200.billund.client.handler.ClientTickHandler;
+import dan200.billund.shared.core.BillundProxyCommon;
 import dan200.billund.shared.data.Brick;
 import dan200.billund.shared.data.Stud;
 import dan200.billund.shared.data.StudColour;
@@ -38,7 +38,7 @@ public class ItemBrick extends Item {
 
     public static ItemStack create(int colour, int width, int depth, int quantity) {
         int damage = ((width - 1) & 0x1) + (((depth - 1) & 0x7) << 1);
-        ItemStack stack = new ItemStack(Billund.BillundItems.brick, quantity, damage);
+        ItemStack stack = new ItemStack(BillundItems.brick, quantity, damage);
         NBTTagCompound nbt = new NBTTagCompound();
         nbt.setInteger("color", colour);
         stack.setTagCompound(nbt);
@@ -93,31 +93,37 @@ public class ItemBrick extends Item {
         TileEntityBillund.StudRaycastResult result = raycastFromPlayer(world, player, f);
         if (result != null) {
             // Calculate where to place the brick
-            int width = getWidth(stack);
-            int depth = getDepth(stack);
+            int defaultWidth = getWidth(stack);
+            int defaultDepth = getDepth(stack);
+            int width = 0;
+            int depth = 0;
             int height = 1;
 
-            if (ClientTickHandler.rotate) {
-                int temp = depth;
-                depth = width;
-                width = temp;
-            }
-
-            if (ClientTickHandler.offsetX <= -width) {
-                ClientTickHandler.offsetX = -width;
-            } else if (ClientTickHandler.offsetX > width) {
-                ClientTickHandler.offsetX = width;
-            }
-
-            if (ClientTickHandler.offsetZ <= -depth) {
-                ClientTickHandler.offsetZ = -depth;
-            } else if (ClientTickHandler.offsetZ > depth) {
-                ClientTickHandler.offsetZ = depth;
-            }
-
-            int placeX = result.hitX + ClientTickHandler.offsetX;
+            int placeX = result.hitX;
             int placeY = result.hitY;
-            int placeZ = result.hitZ + ClientTickHandler.offsetZ;
+            int placeZ = result.hitZ;
+
+            switch (BillundProxyCommon.rotate) {
+                case 0:
+                default:
+                    depth = defaultDepth;
+                    width = defaultWidth;
+                    break;
+                case 1:
+                    depth = defaultWidth;
+                    width = defaultDepth;
+                    break;
+                case 2:
+                    depth = defaultDepth;
+                    width = defaultWidth;
+                    placeZ -= depth - 1;
+                    break;
+                case 3:
+                    depth = defaultWidth;
+                    width = defaultDepth;
+                    placeX -= width - 1;
+                    break;
+            }
 
             switch (result.hitSide) {
                 case 0:

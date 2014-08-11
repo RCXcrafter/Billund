@@ -6,7 +6,7 @@
 
 package dan200.billund.shared.tile;
 
-import dan200.billund.Billund;
+import dan200.billund.shared.block.BillundBlocks;
 import dan200.billund.shared.data.Brick;
 import dan200.billund.shared.data.Stud;
 import dan200.billund.shared.data.StudColour;
@@ -43,7 +43,7 @@ public class TileEntityBillund extends TileEntity {
 
         if (blockY >= 0) {
             Block block = world.getBlock(blockX, blockY, blockZ);
-            if (block == Billund.BillundBlocks.billund) {
+            if (block == BillundBlocks.billund) {
                 TileEntity entity = world.getTileEntity(blockX, blockY, blockZ);
                 if (entity != null && entity instanceof TileEntityBillund) {
                     TileEntityBillund billund = (TileEntityBillund) entity;
@@ -67,7 +67,7 @@ public class TileEntityBillund extends TileEntity {
 
         if (blockY >= 0) {
             Block block = world.getBlock(blockX, blockY, blockZ);
-            if (block == Billund.BillundBlocks.billund) {
+            if (block == BillundBlocks.billund) {
                 TileEntity entity = world.getTileEntity(blockX, blockY, blockZ);
                 if (entity != null && entity instanceof TileEntityBillund) {
                     TileEntityBillund billund = (TileEntityBillund) entity;
@@ -90,7 +90,7 @@ public class TileEntityBillund extends TileEntity {
 
         if (blockY >= 0) {
             Block block = world.getBlock(blockX, blockY, blockZ);
-            if (block == Billund.BillundBlocks.billund) {
+            if (block == BillundBlocks.billund) {
                 // Add to existing billund block
                 TileEntity entity = world.getTileEntity(blockX, blockY, blockZ);
                 if (entity != null && entity instanceof TileEntityBillund) {
@@ -100,7 +100,7 @@ public class TileEntityBillund extends TileEntity {
                 world.markBlockForUpdate(blockX, blockY, blockZ);
             } else if (block.isAir(world, blockX, blockY, blockZ)) {
                 // Add a new billund block
-                if (world.setBlock(blockX, blockY, blockZ, Billund.BillundBlocks.billund, 0, 3)) {
+                if (world.setBlock(blockX, blockY, blockZ, BillundBlocks.billund, 0, 3)) {
                     TileEntity entity = world.getTileEntity(blockX, blockY, blockZ);
                     if (entity != null && entity instanceof TileEntityBillund) {
                         TileEntityBillund billund = (TileEntityBillund) entity;
