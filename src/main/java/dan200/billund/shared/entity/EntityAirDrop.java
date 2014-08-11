@@ -109,6 +109,8 @@ public class EntityAirDrop extends Entity {
                 // Set the block
                 this.worldObj.setBlock(blockX, blockY, blockZ, Block.getBlockById(this.blockID), this.metadata, 3);
 
+                this.worldObj.playAuxSFX(2006, blockX, blockY - 1, blockZ, 10);
+
                 // Populate the block
                 TileEntity entity = this.worldObj.getTileEntity(blockX, blockY, blockZ);
                 if (entity != null && entity instanceof IInventory) {
