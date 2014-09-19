@@ -1,0 +1,22 @@
+# Misc
+itemGroup.billund.name=Billund
+
+brick.illuminated=发光的
+brick.transparent=透明的
+brick.smooth=光滑的
+
+gui.header=乐高积木订单
+gui.order.place=订购
+gui.order.placed=已订购
+
+# Pack
+pack.starter=初学者礼包
+pack.colorA=彩色积木礼包 A
+pack.colorB=彩色积木礼包 B
+pack.colorC=彩色积木礼包 C
+pack.colorD=彩色积木礼包 D
+pack.random=随机礼包
+
+# Item
+item.brick.name=积木
+item.order_form.name=乐高积木订单
